@@ -1,0 +1,33 @@
+/* ---------- Home Page Cards ----------*/
+
+.recipe-card {
+    padding: 20px;
+    margin: 2em 0;
+    border-radius: 10px;
+}
+
+.recipe-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* ---------- Main Nav Bar ----------*/
+
+.tabs {
+    height: 64px;
+}
+
+.tab a {
+    font-size: 1.2em !important;
+}
+
+.tab {
+    line-height: 64px !important;
+}
+
+@media only screen and (min-width: 992px) {
+    #recipes-logo {
+        margin-left: 1.5rem;
+    }
+}
