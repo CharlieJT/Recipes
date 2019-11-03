@@ -1,12 +1,19 @@
 import os
-from flask import Flask
+from flask import Flask, render_template, redirect, url_for, request
+from flask_pymongo import PyMongo
+from bson.objectid import ObjectId
 
 app = Flask(__name__)
 
+app.config["MONGO_DBNAME"] = 'myRecipes'
+app.config['MONGO_URI'] = os.environ.get("MONGO_URI")
+
+mongo = PyMongo(app)
 
 @app.route('/')
-def testing():
-    return 'testing to make sure this is working'
+@app.route('/index')
+def index():
+    return render_template('index.html', recipes=mongo.db.recipes.find())
 
 
 if __name__ == '__main__':
