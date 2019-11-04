@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% block content %}
+
+<!-- Each Recipe Card -->
+    {% for recipe in recipes %}
+    <div class="container recipe-container">
+        <div class="row">
+            <div class="col s12 m6 l4">
+                <div class="recipe-card z-depth-3">
+                    <img class="recipe-image" src="{{recipe.recipe_image_url}}"></img>
+                    <h5>{{recipe.recipe_name}}</h5>
+                    <p>{{recipe.recipe_description}}</p>
+                    <div class="recipe-view-more-button">
+                        <a class="waves-effect waves-light btn blue lighten-3">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    
+{% endblock %}
