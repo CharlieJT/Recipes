@@ -25,9 +25,9 @@
 /* ---------- Main Nav Bar ----------*/
 
 .navbar-container {
-    position: absolute;
-    background-color: #00000000;
+    position: fixed;
     box-shadow: none;
+    transition: background-color 0.3s ease-in, box-shadow 0.3s ease-in;
 }
 
 .tabs {
