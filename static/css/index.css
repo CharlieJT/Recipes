@@ -1,0 +1,59 @@
+/* ---------- Main Image ----------*/
+
+.title-container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.main-image-container {
+    background: url(../images/main-recipes-image.png) fixed center center no-repeat;
+    height: 100%;
+}
+
+.main-recipe-images-column {
+    padding: 0 !important;
+}
+
+main-recipe-images-column {
+    height: 80vh;
+}
+
+.opaque-background {
+    background-color: #00000061;
+}
+
+/* ---------- Recipe Cards ----------*/
+
+
+.recipe-container {
+    background-color: #fff;
+}
+
+.recipe-container .row {
+    margin: 0;
+}
+
+.recipe-name-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 81px;
+    margin-top: 18px;
+}
+
+.recipe-description-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+}
+
+
+
+@media only screen and (min-width: 1050px) {
+    .main-image-container {
+        background-size: 100%;
+    }
+}

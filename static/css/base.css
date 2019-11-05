@@ -1,6 +1,7 @@
 /* ---------- Home Page Cards ----------*/
 
 .recipe-card {
+    background-color: #fff;
     padding: 20px;
     margin: 2em 0;
     border-radius: 10px;
@@ -21,8 +22,13 @@
     width: 100%;
 }
 
-
 /* ---------- Main Nav Bar ----------*/
+
+.navbar-container {
+    position: absolute;
+    background-color: #00000000;
+    box-shadow: none;
+}
 
 .tabs {
     height: 64px;

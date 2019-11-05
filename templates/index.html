@@ -1,21 +1,45 @@
 {% extends 'base.html' %} {% block content %}
 
-<!-- Each Recipe Card -->
-    {% for recipe in recipes %}
-    <div class="container recipe-container">
-        <div class="row">
-            <div class="col s12 m6 l4">
-                <div class="recipe-card z-depth-3">
-                    <img class="recipe-image" src="{{recipe.recipe_image_url}}"></img>
-                    <h5>{{recipe.recipe_name}}</h5>
-                    <p>{{recipe.recipe_description}}</p>
-                    <div class="recipe-view-more-button">
-                        <a class="waves-effect waves-light btn blue lighten-3">View Recipe</a>
-                    </div>
-                </div>
-            </div>
+
+<div class="container-fluid main-image-container">
+    <div class="opaque-background"/>
+    <div class="row">
+        <div class="col main-recipe-images-column">
+            <div class="main-recipe-images">
         </div>
     </div>
-    {% endfor %}
+</div>
+
+
+<div class="container-fluid title-container">
+    <div class="row">
+        <div class="col">
+            <h1>Recipes</h1>
+        </div>
+    </div>
+</div>
+
+<!-- Each Recipe Card -->
+    
+    <div class="container-fluid recipe-container">
+        <div class="row">
+            {% for recipe in recipes %}
+                <div class="col s12 m6 l4">
+                    <div class="recipe-card z-depth-3">
+                        <img class="recipe-image" src="{{recipe.recipe_image_url}}"></img>
+                        <div class="recipe-name-wrapper">
+                            <h5>{{recipe.recipe_name}}</h5>
+                        </div>
+                        <div class="recipe-description-wrapper">
+                            <p>{{recipe.recipe_description}}</p>
+                        </div>
+                        <div class="recipe-view-more-button">
+                            <a class="waves-effect waves-light btn blue lighten-1">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
     
 {% endblock %}

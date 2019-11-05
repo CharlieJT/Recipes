@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
     <!-- Exteral styles -->
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/base.css')}}" type="text/css" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}" type="text/css" />
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +18,7 @@
 
 <body>
     <!-- Main Navbar -->
-    <nav class="blue lighten-3">
+    <nav class="navbar-container">
         <div class="nav-wrapper">
             <a href="/" id="recipes-logo" class="brand-logo">Recipes</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -39,7 +40,7 @@
     {% block content %} {% endblock %}
 
     <!-- Footer -->
-    <footer class="page-footer blue lighten-3">
+    <footer class="page-footer blue lighten-1">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -49,18 +50,16 @@
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Links</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Recipes</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">List of Recipes</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container">
-                © 2014 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                Copyright © Produced by Charlie Tipton
+                <a class="grey-text text-lighten-4 right" href="https://github.com/CharlieJT/Repices" target="_blank">Find Github Repo Here!</a>
             </div>
         </div>
     </footer>
