@@ -9,13 +9,14 @@ $(document).ready(() => {
 
     // Will check to see if the window has been scrolled 50px from the top
     $(window).scroll(() => {
-        const joinedBlueLighen = ['blue', 'lighten-1'].join(' ');
         const joinedNATransparent = ['N/A', 'transparent'].join(' ');
         if ($(document).scrollTop() > 50) {
-            $(".navbar-container").removeClass(joinedNATransparent).addClass(joinedBlueLighen).css('box-shadow', 'rgb(70, 70, 70) 1px 1px 5px');
+            $(".navbar-container").removeClass(joinedNATransparent).css('background-color', '#000000a3');
+            $(".recipe-logo-image").css('width', '55px');
         }
         else {
-            $(".navbar-container").removeClass(joinedBlueLighen).addClass(joinedNATransparent).css('box-shadow', 'none');
+            $(".navbar-container").addClass(joinedNATransparent);
+            $(".recipe-logo-image").css('width', '80px');
         }
     });
 });

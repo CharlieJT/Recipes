@@ -27,7 +27,27 @@
 .navbar-container {
     position: fixed;
     box-shadow: none;
+    height: 64px;
+    line-height: 64px;
     transition: background-color 0.3s ease-in, box-shadow 0.3s ease-in;
+}
+
+.logo-image {
+    background: url(../images/main-logo-image.png);
+}
+
+#recipes-logo {
+    float: right;
+}
+
+.recipe-logo-image {
+    width: 80px;
+    transition: width 0.15s ease-in;
+    margin: 0 20px;
+}
+    
+.brand-logo {
+    right: 3 !important;
 }
 
 .tabs {
@@ -42,8 +62,9 @@
     line-height: 64px !important;
 }
 
+
 @media only screen and (min-width: 992px) {
     #recipes-logo {
-        margin-left: 1.5rem;
+        float: left;
     }
 }

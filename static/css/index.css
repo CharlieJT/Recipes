@@ -7,6 +7,16 @@
     color: #fff;
 }
 
+.down-arrow {
+    display: flex !important;
+    position: absolute;
+    left: 49vw;
+    right: 50vw;
+    font-size: 3.7rem !important;
+    justify-content: center;
+    animation: scrollDown 0.4s alternate-reverse infinite ease-in-out;
+}
+
 .main-image-container {
     background: url(../images/main-recipes-image.png) fixed center center no-repeat;
     height: 100%;
@@ -55,5 +65,23 @@ main-recipe-images-column {
 @media only screen and (min-width: 1050px) {
     .main-image-container {
         background-size: 100%;
+    }
+}
+
+@-webkit-keyframes scrollDown {
+    from {
+        margin-top: 0;
+    }
+    to {
+        margin-top: 8px;
+    }
+}
+
+@keyframes scrollDown {
+    from {
+        margin-top: 0;
+    }
+    to {
+        margin-top: 8px;
     }
 }
