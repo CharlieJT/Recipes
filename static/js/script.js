@@ -21,4 +21,6 @@ $(document).ready(() => {
             $('.to-top').css('opacity', '0');
         }
     });
+    $('li.active').removeClass('active');
+    $('a[href="' + location.pathname + '"]').closest('li').addClass('active');
 });

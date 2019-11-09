@@ -64,7 +64,23 @@ html {
 }
 
 .tab {
-    line-height: 64px !important;
+    line-height: 61px !important;
+}
+
+.navbar-listing .active {
+    background-color: transparent;
+    border-bottom: 3px solid #fff;
+}
+
+.side-nav {
+    padding: 64px 0 0 0;
+    z-index: 10000;
+}
+
+/* ---------- Footer ----------*/
+
+.footer-bottom {
+    clear: both;
 }
 
 /* ---------- Back to top icon ----------*/

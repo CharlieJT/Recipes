@@ -19,7 +19,7 @@
 
 .title-container h1 {
     text-align: center;
-    font-size: 3.2rem;
+    font-size: 2.4rem;
 }
 
 .search-button {
@@ -125,6 +125,10 @@ main-recipe-images-column {
     margin: 4.5rem 0 3.5rem 0;
 }
 
+.recipe-image {
+    padding: 10px;
+    border-radius: 15px !important;
+}
 
 .most-viewed-divider {
     width: 150px;
@@ -132,7 +136,7 @@ main-recipe-images-column {
 
 .mostly-viewed-heading-column {
     margin: 60px;
-    margin: 5.5rem auto 3.2rem;
+    margin: 5.5rem auto 1.2rem;
 }
 
 .mostly-viewed-heading-column h5 {
@@ -197,6 +201,9 @@ main-recipe-images-column {
     .recipe-row {
         width: 992px;
         margin: auto !important;
+    }
+    .title-container h1 {
+        font-size: 3rem;
     }
 }
 

@@ -14,8 +14,12 @@ mongo = PyMongo(app)
 @app.route('/index')
 def index():
     return render_template('index.html', recipes=mongo.db.recipes.find().limit(3))
-
-
+    
+    
+@app.route('/recipe-listing')
+def recipe_listing():
+    return render_template('recipe-listing.html', recipes=mongo.db.recipes.find())
+  
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),

@@ -30,18 +30,16 @@
                 <img class="recipe-logo-image" src="static/images/recipe-nest.png" alt="Recipes Logo"/>
             </a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <ul class="tabs tabs-transparent">
-                    <li class="tab"><a class="active" href="#test1">Home</a></li>
-                    <li class="tab"><a href="#test2">List of Recipes</a></li>
-                    <li class="tab"><a href="#test3">Create a Recipe</a></li>
-                </ul>
+            <ul id="nav-mobile" class="right hide-on-med-and-down navbar-listing">
+                <li class="tab"><a class="tab-link" href="{{ url_for('index') }}">Home</a></li>
+                <li class="tab"><a class="tab-link" href="{{ url_for('recipe_listing') }}">List of Recipes</a></li>
+                <li class="tab"><a class="tab-link" href="#test3">Create a Recipe</a></li>
             </ul>
         </div>
     </nav>
     <ul class="side-nav" id="mobile-demo">
-        <li class="tab"><a class="active" href="#test1">Home</a></li>
-        <li class="tab"><a href="#test2">List of Recipes</a></li>
+        <li class="tab"><a class="active" href="{{ url_for('index') }}">Home</a></li>
+        <li class="tab"><a href="{{ url_for('recipe_listing') }}">List of Recipes</a></li>
         <li class="tab"><a href="#test3">Create a Recipe</a></li>
     </ul>
 
@@ -54,14 +52,14 @@
                 <div class="col l6 s12">
                     <h5 class="white-text">Recipe Nest</h5>
                     <p class="grey-text text-lighten-4"></p>
-                    <p class="grey-text text-lighten-4">Recipe Nest was designed to give the user control over recipe ideas.
-                    You are given the option to browse for different recipes and if you register and login,
-                    you can create your own recipes, make changes to your recipes and delete recipes that you no longer want.</p>
+                    <p class="grey-text text-lighten-4">Recipe Nest was designed to give the user control over recipe ideas. You are given the option to browse for different recipes and if you register and login, you can create your own recipes, make changes to your recipes and delete recipes
+                        that you no longer want.</p>
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Links</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">List Of Recipes</a></li>
+                        <li><a class="grey-text text-lighten-3" href="{{ url_for('index') }}">Home</a></li>
+                        <li><a class="grey-text text-lighten-3" href="{{ url_for('recipe_listing') }}">List Of Recipes</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!">Create Recipe</a></li>
                     </ul>
                 </div>
@@ -69,12 +67,13 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                Copyright © Produced by Charlie Tipton
                 <a class="grey-text text-lighten-4 right" href="https://github.com/CharlieJT/Repices" target="_blank">Find Github Repo Here!</a>
+                <div class="footer-bottom">Copyright © Produced by Charlie Tipton</div>
             </div>
         </div>
     </footer>
 
+    <!-- Back to top icon -->
     <a href="#" class="to-top"></a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
