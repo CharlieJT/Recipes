@@ -22,6 +22,11 @@
     font-size: 3.2rem;
 }
 
+.search-button {
+    display: flex;
+    justify-content: center;
+}
+
 .down-arrow-link {
     color: white;
 }
@@ -87,14 +92,17 @@ main-recipe-images-column {
 }
 
 /* label focus color */
- .input-field input:focus + label {
-   color: #42a5f5 !important;
- }
- /* label underline focus color */
- .row .input-field input:focus {
-   border-bottom: 1px solid #42a5f5 !important;
-   box-shadow: 0 1px 0 0 #42a5f5 !important;
- }
+
+.input-field input:focus+label {
+    color: #42a5f5 !important;
+}
+
+/* label underline focus color */
+
+.row .input-field input:focus {
+    border-bottom: 1px solid #42a5f5 !important;
+    box-shadow: 0 1px 0 0 #42a5f5 !important;
+}
 
 .recipe-search-bar:focus {
     border-bottom: 1px solid #42a5f5 !important;
@@ -104,6 +112,24 @@ main-recipe-images-column {
 
 /* ---------- Recipe Cards ----------*/
 
+#recipe-container {
+    background-color: #fff;
+}
+
+.card-surrounding {
+    max-width: 265px;
+    margin: auto;
+}
+
+.card {
+    margin: 4.5rem 0 3.5rem 0;
+}
+
+
+.most-viewed-divider {
+    width: 150px;
+}
+
 .mostly-viewed-heading-column {
     margin: 60px;
     margin: 5.5rem auto 3.2rem;
@@ -111,18 +137,7 @@ main-recipe-images-column {
 
 .mostly-viewed-heading-column h5 {
     text-align: center;
-    max-width: 725px;
     margin: auto;
-    border: 3px solid #42a5f5;
-    border-radius: 25px;
-    color: #fff;
-    background: #000000a3;
-    color: #fff;
-    padding: 20px;
-}
-
-#recipe-container {
-    background-color: #fff;
 }
 
 #recipe-container .row {
@@ -133,19 +148,59 @@ main-recipe-images-column {
     padding: 0 2.75rem;
 }
 
+.recipe-name,
+.recipe-close {
+    position: relative;
+    width: 100%;
+    font-size: 1.1rem !important;
+    font-weight: 400 !important;
+}
+
+.recipe-name i {
+    top: 0;
+    right: -15px;
+}
+
+.recipe-close i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 30px;
+    margin-right: 12px;
+}
+
 .card-title-spacer {
     display: flex;
     height: 120px;
 }
 
 .more-info {
-    position: absolute;   
+    position: absolute;
 }
+
+/* ---------- Media Queries ----------*/
+
 @media only screen and (min-width: 1050px) {
     .main-image-container {
         background-size: 100%;
     }
 }
+
+@media only screen and (min-width: 1200px) {
+    .recipe-row {
+        width: 1200px;
+        margin: auto !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .recipe-row {
+        width: 992px;
+        margin: auto !important;
+    }
+}
+
+/* ---------- Keyframes (Animations) ----------*/
 
 @-webkit-keyframes scrollDown {
     from {
