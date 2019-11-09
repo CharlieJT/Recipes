@@ -1,9 +1,13 @@
 /* ---------- Home Page Cards ----------*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 .recipe-card {
     background-color: #fff;
     padding: 20px;
-    margin: 2em 0;
+    margin: 6em 2em;
     border-radius: 10px;
     text-align: center;
 }
@@ -41,11 +45,11 @@
 }
 
 .recipe-logo-image {
-    width: 80px;
+    width: 95px;
     transition: width 0.15s ease-in;
-    margin: 0 20px;
+    margin: 10px 20px 0;
 }
-    
+
 .brand-logo {
     right: 3 !important;
 }

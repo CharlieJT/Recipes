@@ -12,11 +12,11 @@ $(document).ready(() => {
         const joinedNATransparent = ['N/A', 'transparent'].join(' ');
         if ($(document).scrollTop() > 50) {
             $(".navbar-container").removeClass(joinedNATransparent).css('background-color', '#000000a3');
-            $(".recipe-logo-image").css('width', '55px');
+            $(".recipe-logo-image").css({ 'width': '66px', 'margin-top': '0px' });
         }
         else {
             $(".navbar-container").addClass(joinedNATransparent);
-            $(".recipe-logo-image").css('width', '80px');
+            $(".recipe-logo-image").css({ 'width': '95px', 'margin-top': '5px' });
         }
     });
 });

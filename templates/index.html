@@ -14,10 +14,12 @@
 <div class="container-fluid title-container">
     <div class="row">
         <div class="col s12">
-            <h1>Recipes</h1>
+            <h1>Welcome to Recipe Nest</h1>
         </div>
         <div class="col s12">
-            <i class="material-icons down-arrow">keyboard_arrow_down</i>
+            <a class="down-arrow-link" href="#recipe-container">
+                <i class="material-icons down-arrow">keyboard_arrow_down</i>
+            </a>
         </div>
     </div>
 </div>
@@ -25,7 +27,7 @@
 
 <!-- Each Recipe Card -->
     
-    <div class="container-fluid recipe-container">
+    <div id="recipe-container" class="container-fluid ">
         <div class="row">
             {% for recipe in recipes %}
                 <div class="col s12 m6 l4">

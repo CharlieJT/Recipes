@@ -7,6 +7,19 @@
     color: #fff;
 }
 
+.title-container .row {
+    opacity: 0;
+    animation: FadeInGreeting 1.5s 1s forwards ease-in-out;
+}
+
+.title-container h1 {
+    text-align: center;
+}
+
+.down-arrow-link {
+    color: white;
+}
+
 .down-arrow {
     display: flex !important;
     position: absolute;
@@ -18,7 +31,7 @@
 }
 
 .main-image-container {
-    background: url(../images/main-recipes-image.png) fixed center center no-repeat;
+    background: url(../images/recipe-nest-main-image.png) fixed center center no-repeat;
     height: 100%;
 }
 
@@ -37,12 +50,16 @@ main-recipe-images-column {
 /* ---------- Recipe Cards ----------*/
 
 
-.recipe-container {
+#recipe-container {
     background-color: #fff;
 }
 
-.recipe-container .row {
+#recipe-container .row {
     margin: 0;
+}
+
+#recipe-container .col {
+    padding: 0 2.75rem;
 }
 
 .recipe-name-wrapper {
@@ -85,3 +102,22 @@ main-recipe-images-column {
         margin-top: 8px;
     }
 }
+
+@-webkit-keyframes FadeInGreeting {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes FadeInGreeting {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

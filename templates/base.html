@@ -14,10 +14,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <!-- Favicon -->
-	<link class="favicon" rel="icon" href="static/images/recipe-logo.png" type="image/ico">
+    <link rel="icon" href="{{ url_for('static', filename='/images/favicon.ico') }}" type="image/x-icon" />
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Recipe Nest</title>
 </head>
 
 <body>
@@ -25,7 +27,7 @@
     <nav class="navbar-container N/A transparent">
         <div class="nav-wrapper">
             <a href="/" id="recipes-logo">
-                <img class="recipe-logo-image" src="static/images/repice-logo.png" alt="Recipes Logo"></img
+                <img class="recipe-logo-image" src="static/images/recipe-nest.png" alt="Recipes Logo"/>
             </a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
