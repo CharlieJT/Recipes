@@ -66,6 +66,45 @@ html {
     line-height: 64px !important;
 }
 
+/* ---------- Back to top icon ----------*/
+
+.to-top {
+	color :white;
+	padding-top: 1.8em;
+	display: inline-block;/* or block */
+	position: fixed;
+	bottom: 30px;
+    right: 45px;
+	text-decoration:none;
+	transition:all .3s ease-out;
+	opacity: 0;
+}
+
+.to-top:before {
+	content: url(../images/chevron-up.png);
+    font-size: 1.9em;
+	position: absolute;
+	text-align: center;
+	background-color: #00000050;
+	top: 0;
+	left: 50%;
+	margin-left:-.7em;
+	border:solid .13em white;
+	border-radius: 10em;
+	width: 1.6em;
+	height: 1.6em;
+	line-height: 1.3em;
+	border-color: inherit;
+	transition: transform .5s ease-in;
+}
+.to-top:hover {
+	border-color: #42a5f5;
+}
+.to-top:hover:before {
+    content: url(../images/chevron-up-blue.png);
+	transform: rotate(360deg);
+}
+
 
 @media only screen and (min-width: 992px) {
     #recipes-logo {

@@ -13,10 +13,12 @@ $(document).ready(() => {
         if ($(document).scrollTop() > 50) {
             $(".navbar-container").removeClass(joinedNATransparent).css('background-color', '#000000a3');
             $(".recipe-logo-image").css({ 'width': '66px', 'margin-top': '0px' });
+            $('.to-top').css('opacity', '1');
         }
         else {
             $(".navbar-container").addClass(joinedNATransparent);
             $(".recipe-logo-image").css({ 'width': '95px', 'margin-top': '5px' });
+            $('.to-top').css('opacity', '0');
         }
     });
 });
