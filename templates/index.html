@@ -2,50 +2,72 @@
 
 
 <div class="container-fluid main-image-container">
-    <div class="opaque-background"/>
+    <div class="opaque-background" />
     <div class="row">
         <div class="col main-recipe-images-column">
             <div class="main-recipe-images">
+            </div>
         </div>
     </div>
-</div>
 
 
-<div class="container-fluid title-container">
-    <div class="row">
-        <div class="col s12">
-            <h1>Welcome to Recipe Nest</h1>
-        </div>
-        <div class="col s12">
-            <a class="down-arrow-link" href="#recipe-container">
-                <i class="material-icons down-arrow">keyboard_arrow_down</i>
-            </a>
-        </div>
-    </div>
-</div>
-
-
-<!-- Each Recipe Card -->
-    
-    <div id="recipe-container" class="container-fluid ">
+    <div class="container-fluid title-container">
         <div class="row">
-            {% for recipe in recipes %}
-                <div class="col s12 m6 l4">
-                    <div class="recipe-card z-depth-3">
-                        <img class="recipe-image" src="{{recipe.recipe_image_url}}"></img>
-                        <div class="recipe-name-wrapper">
-                            <h5>{{recipe.recipe_name}}</h5>
-                        </div>
-                        <div class="recipe-description-wrapper">
-                            <p>{{recipe.recipe_description}}</p>
-                        </div>
-                        <div class="recipe-view-more-button">
-                            <a class="waves-effect waves-light btn blue lighten-1">View Recipe</a>
+            <div class="col main-heading-column">
+                <div class="row">
+                    <div class="col s12">
+                        <h1>Welcome to Recipe Nest!</h1>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="row search-bar-row">
+                                    <div class="input-field col s12">
+                                        <input id="search" type="text" class="validate">
+                                        <label for="search">Search for recipe...</label>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col s12">
+                <a class="down-arrow-link" href="#recipe-container">
+                <i class="material-icons down-arrow">keyboard_arrow_down</i>
+            </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Each Recipe Card -->
+
+    <div id="recipe-container" class="container-fluid ">
+        <div class="row">
+            <div class="mostly-viewed-heading-column col s12">
+                <h5>Here are some of our most viewed recipes</h5>
+            </div>
+            {% for recipe in recipes %}
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{{recipe.recipe_image_url}}">
+                    </div>
+                    <div class="card-content">
+                        <div class='card-title-spacer'>
+                            <div class="card-title activator grey-text text-darken-4">{{recipe.recipe_name}}<i class="material-icons right more-info">more_vert</i></div>
+                        </div>
+                        <button class="btn waves-effect waves-light blue lighten-1" type="submit" name="action">View more recipes</button>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">{{recipe.recipe_name}}<i class="material-icons right">close</i></span>
+                        <p>{{recipe.recipe_description}}</p>
+                    </div>
+                </div>
+            </div>
             {% endfor %}
         </div>
     </div>
-    
-{% endblock %}
+
+    {% endblock %}

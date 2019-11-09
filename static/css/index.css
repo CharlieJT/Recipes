@@ -7,6 +7,11 @@
     color: #fff;
 }
 
+.main-heading-column {
+    background-color: #000000a6;
+    border-radius: 10px;
+}
+
 .title-container .row {
     opacity: 0;
     animation: FadeInGreeting 1.5s 1s forwards ease-in-out;
@@ -14,6 +19,7 @@
 
 .title-container h1 {
     text-align: center;
+    font-size: 3.2rem;
 }
 
 .down-arrow-link {
@@ -47,8 +53,73 @@ main-recipe-images-column {
     background-color: #00000061;
 }
 
+/* label color */
+
+.input-field label {
+    color: #fff;
+}
+
+/* label focus color */
+
+.input-field input[type=text]:focus+label {
+    color: #fff;
+}
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+/* valid color */
+
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+
+/* invalid color */
+
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+
+/* label focus color */
+ .input-field input:focus + label {
+   color: #42a5f5 !important;
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid #42a5f5 !important;
+   box-shadow: 0 1px 0 0 #42a5f5 !important;
+ }
+
+.recipe-search-bar:focus {
+    border-bottom: 1px solid #42a5f5 !important;
+    -webkit-box-shadow: 0 1px 0 0 #26a69a !important;
+    box-shadow: 0 1px 0 0 #42a5f5 !important;
+}
+
 /* ---------- Recipe Cards ----------*/
 
+.mostly-viewed-heading-column {
+    margin: 60px;
+    margin: 5.5rem auto 3.2rem;
+}
+
+.mostly-viewed-heading-column h5 {
+    text-align: center;
+    max-width: 725px;
+    margin: auto;
+    border: 3px solid #42a5f5;
+    border-radius: 25px;
+    color: #fff;
+    background: #000000a3;
+    color: #fff;
+    padding: 20px;
+}
 
 #recipe-container {
     background-color: #fff;
@@ -62,23 +133,14 @@ main-recipe-images-column {
     padding: 0 2.75rem;
 }
 
-.recipe-name-wrapper {
+.card-title-spacer {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 65px;
-    margin-top: 18px;
-}
-
-.recipe-description-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 120px;
 }
 
-
-
+.more-info {
+    position: absolute;   
+}
 @media only screen and (min-width: 1050px) {
     .main-image-container {
         background-size: 100%;
@@ -120,4 +182,3 @@ main-recipe-images-column {
         opacity: 1;
     }
 }
-

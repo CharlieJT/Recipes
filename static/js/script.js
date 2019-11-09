@@ -6,7 +6,7 @@ is ready to execute JavaScript code.
 $(document).ready(() => {
     // This is the jquery that gives the mobile burger icon the ability to toggle the mobile sidedrawer
     $('.button-collapse').sideNav();
-
+    $('input#input_text, textarea#textarea2').characterCounter();
     // Will check to see if the window has been scrolled 50px from the top
     $(window).scroll(() => {
         const joinedNATransparent = ['N/A', 'transparent'].join(' ');

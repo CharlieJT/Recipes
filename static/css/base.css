@@ -34,6 +34,7 @@ html {
     height: 64px;
     line-height: 64px;
     transition: background-color 0.3s ease-in, box-shadow 0.3s ease-in;
+    z-index: 1000;
 }
 
 .logo-image {
