@@ -21,6 +21,7 @@ $(document).ready(() => {
             $('.to-top').css('opacity', '0');
         }
     });
+    // Will remove active class and add new active class depending on which is matched with the pathname
     $('li.active').removeClass('active');
     $('a[href="' + location.pathname + '"]').closest('li').addClass('active');
 });

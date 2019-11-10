@@ -61,6 +61,7 @@ html {
 
 .tab a {
     font-size: 1.2em !important;
+    text-transform: uppercase;
 }
 
 .tab {
@@ -70,6 +71,15 @@ html {
 .navbar-listing .active {
     background-color: transparent;
     border-bottom: 3px solid #fff;
+}
+
+
+.pages-footer-link {
+    color: #ddd;
+}
+
+.active .pages-footer-link {
+    color: #fff;
 }
 
 .side-nav {

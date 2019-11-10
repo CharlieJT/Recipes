@@ -38,7 +38,7 @@
     right: 50vw;
     font-size: 3.7rem !important;
     justify-content: center;
-    animation: scrollDown 0.4s alternate-reverse infinite ease-in-out;
+    animation: scrollDown 0.4s alternate-reverse infinite cubic-bezier(1,-0.01, 0.79, 0.54);
 }
 
 .main-image-container {
@@ -112,7 +112,7 @@ main-recipe-images-column {
 
 /* ---------- Recipe Cards ----------*/
 
-#recipe-container {
+#recipe-container-main {
     background-color: #fff;
 }
 
@@ -144,11 +144,11 @@ main-recipe-images-column {
     margin: auto;
 }
 
-#recipe-container .row {
+#recipe-container-main .row {
     margin: 0;
 }
 
-#recipe-container .col {
+#recipe-container-main .col {
     padding: 0 2.75rem;
 }
 
