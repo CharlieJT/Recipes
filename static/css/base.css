@@ -73,15 +73,6 @@ html {
     border-bottom: 3px solid #fff;
 }
 
-
-.pages-footer-link {
-    color: #ddd;
-}
-
-.active .pages-footer-link {
-    color: #fff;
-}
-
 .side-nav {
     padding: 64px 0 0 0;
     z-index: 10000;
@@ -91,6 +82,15 @@ html {
 
 .footer-bottom {
     clear: both;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #ddd;
+}
+
+.footer-links .active a {
+    color: #fff;
 }
 
 /* ---------- Back to top icon ----------*/

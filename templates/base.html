@@ -32,9 +32,9 @@
             </a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down navbar-listing">
-                <li class="tab"><a class="tab-link" href="{{ url_for('index') }}">Home</a></li>
-                <li class="tab"><a class="tab-link" href="{{ url_for('recipe_listing') }}">List of Recipes</a></li>
-                <li class="tab"><a class="tab-link" href="#test3">Create a Recipe</a></li>
+                <li class="tab"><a class="nav-link" href="{{ url_for('index') }}">Home</a></li>
+                <li class="tab"><a class="nav-link" href="{{ url_for('recipe_listing') }}">List of Recipes</a></li>
+                <li class="tab"><a class="nav-link" href="#test3">Create a Recipe</a></li>
             </ul>
         </div>
     </nav>
@@ -58,7 +58,7 @@
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Links</h5>
-                    <ul>
+                    <ul class="footer-links">
                         <li><a class="pages-footer-link" href="{{ url_for('index') }}">Home</a></li>
                         <li><a class="pages-footer-link" href="{{ url_for('recipe_listing') }}">List Of Recipes</a></li>
                         <li><a class="pages-footer-link" href="#!">Create Recipe</a></li>
