@@ -1,6 +1,6 @@
 import os
 from flask import Flask, render_template, redirect, url_for, request
-from flask_pymongo import PyMongo
+from flask_pymongo import PyMongo, DESCENDING
 from bson.objectid import ObjectId
 
 app = Flask(__name__)
@@ -13,12 +13,14 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html', title="Home", recipes=mongo.db.recipes.find().limit(3))
+    recipes=mongo.db.recipes.find().sort([('views-per-page', DESCENDING)]).limit(3)
+    return render_template('index.html', title="Home", recipes=recipes)
     
     
 @app.route('/recipe-listing')
 def recipe_listing():
-    return render_template('recipe-listing.html', recipes=mongo.db.recipes.find())
+    recipes=mongo.db.recipes.find()
+    return render_template('recipe-listing.html', title="Recipes", recipes=recipes)
   
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
