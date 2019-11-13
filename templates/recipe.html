@@ -1,5 +1,26 @@
 {% extends 'base.html' %} {% block content %}
 
+<div class="container-fluid recipe-container-heading">
+    <div class="row">
+        <div class="col recipe-container-column">
+            <div class="main-recipe-section" />
+        </div>
+    </div>
+</div>
+
+
 <p>Views: {{ recipe.views }}</p>
+<p>Name: {{ recipe.recipe_name }}</p>
+<p>Description: {{ recipe.recipe_description }}</p>
+<p>Ingredients: {{ recipe_list }}</p>
+
+<img src="{{recipe.recipe_image_url}}" alt="" />
+
+<ul>
+    {% for i in recipe.recipe_ingredients.split('.') %}
+        <li>{{ i }}</li>
+    {% endfor %}
+</ul>
+
 
 {% endblock %}

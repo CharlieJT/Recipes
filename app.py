@@ -22,17 +22,22 @@ def recipe_listing():
     recipes=mongo.db.recipes.find()
     return render_template('recipe-listing.html', title="Recipes", recipes=recipes)
     
+    
 @app.route('/recipe/<recipe_id>')
 def recipe(recipe_id):
+    """Shows full recipe and increments view"""
     mongo.db.recipes.find_one_and_update(
         {'_id': ObjectId(recipe_id)},
         {'$inc': {'views': 1}}
     )
-    one_recipe = mongo.db.recipes.find_one_or_404({'_id': ObjectId(recipe_id)})
-    return render_template('recipe.html', recipe=one_recipe)
-    
+    recipe_ingredients = mongo.db.recipes.recipe_ingredients.find_one()
+    recipe = mongo.db.recipes.find_one_or_404({'_id': ObjectId(recipe_id)})
+    return render_template('recipe.html', recipe=recipe )
+
   
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
             debug=True)
+
+
