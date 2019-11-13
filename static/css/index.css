@@ -14,6 +14,7 @@
 
 .title-container .row {
     opacity: 0;
+    filter: blur(100px);
     animation: FadeInGreeting 1.5s 1s forwards ease-in-out;
 }
 
@@ -116,6 +117,11 @@ main-recipe-images-column {
     background-color: #fff;
 }
 
+.down-arrow {
+    position: absolute;
+    left: 50%;
+}
+
 .card-surrounding {
     max-width: 265px;
     margin: auto;
@@ -190,6 +196,16 @@ main-recipe-images-column {
 
 /* ---------- Media Queries ----------*/
 
+@media only screen and (min-width: 992px) {
+    .recipe-row {
+        width: 992px;
+        margin: auto !important;
+    }
+    .title-container h1 {
+        font-size: 3rem;
+    }
+}
+
 @media only screen and (min-width: 1050px) {
     .main-image-container {
         background-size: 100%;
@@ -203,15 +219,7 @@ main-recipe-images-column {
     }
 }
 
-@media only screen and (min-width: 992px) {
-    .recipe-row {
-        width: 992px;
-        margin: auto !important;
-    }
-    .title-container h1 {
-        font-size: 3rem;
-    }
-}
+
 
 /* ---------- Keyframes (Animations) ----------*/
 
@@ -245,8 +253,11 @@ main-recipe-images-column {
 @keyframes FadeInGreeting {
     from {
         opacity: 0;
+        filter: blur(100px);
     }
     to {
+        
         opacity: 1;
+        filter: blur(0px);
     }
 }
