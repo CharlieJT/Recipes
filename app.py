@@ -21,6 +21,16 @@ def index():
 def recipe_listing():
     recipes=mongo.db.recipes.find()
     return render_template('recipe-listing.html', title="Recipes", recipes=recipes)
+    
+@app.route('/recipe/<recipe_id>')
+def recipe(recipe_id):
+    mongo.db.recipes.find_one_and_update(
+        {'_id': ObjectId(recipe_id)},
+        {'$inc': {'views': 1}}
+    )
+    one_recipe = mongo.db.recipes.find_one_or_404({'_id': ObjectId(recipe_id)})
+    return render_template('recipe.html', recipe=one_recipe)
+    
   
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

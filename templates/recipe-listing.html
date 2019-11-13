@@ -24,7 +24,8 @@
                             <input id="search-recipe-listing" type="text" class="validate">
                             <label for="search-recipe-listing-label">Search for recipe...</label>
                             <div class="search-button">
-                                <button class="btn waves-effect waves-light blue lighten-1" type="submit" name="action">Search</button>
+                                    <button class="btn waves-effect waves-light blue lighten-1" type="submit" name="action">Search</button>
+                                
                             </div>
                         </div>
                     </div>
@@ -44,7 +45,9 @@
                         <div class='card-title-spacer'>
                             <div class="card-title activator grey-text text-darken-4 recipe-name">{{recipe.recipe_name}}<i class="material-icons right more-info">more_vert</i></div>
                         </div>
-                        <button class="btn waves-effect waves-light blue lighten-1" type="submit" name="action">View more recipes</button>
+                        <a href="{{ url_for('recipe', recipe_id=recipe._id) }}">
+                            <button class="btn waves-effect waves-light blue lighten-1" type="submit" name="action">More about recipe</button>
+                        </a>
                     </div>
                     <div class="card-reveal recipe-close">
                         <span class="card-title grey-text text-darken-4">{{recipe.recipe_name}}<i class="material-icons right">close</i></span>
