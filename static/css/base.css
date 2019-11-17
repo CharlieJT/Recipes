@@ -135,8 +135,35 @@ html {
 
 /* ---------- Media Queries ----------*/
 
+@media only screen and (min-width: 480px) {
+    section {
+        width: 480px;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    section {
+        width: 768px;
+        margin: auto;
+    }
+}
+
 @media only screen and (min-width: 992px) {
+    section {
+        width: 992px;
+        margin: auto;
+    }
     #recipes-logo {
         float: left;
+    }
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+    section {
+        width: 1200px;
+        margin: auto;
     }
 }

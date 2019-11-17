@@ -1,3 +1,10 @@
 .recipe-page-image {
     width: 100%;
+    max-width: 300px;
+    max-height: 300px;
 }
+
+.recipe-description-row {
+    height: 300px;
+}
+
