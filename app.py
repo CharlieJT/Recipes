@@ -13,26 +13,28 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/index')
 def index():
+    """This shows a list of 3 recipes which have the highest views"""
     recipes=mongo.db.recipes.find().sort([('views-per-page', DESCENDING)]).limit(3)
     return render_template('index.html', title="Home", recipes=recipes)
     
     
 @app.route('/recipe-listing')
 def recipe_listing():
+    """This shows a list of all of the recipes"""
     recipes=mongo.db.recipes.find()
     return render_template('recipe-listing.html', title="Recipes", recipes=recipes)
     
     
 @app.route('/recipe/<recipe_id>')
 def recipe(recipe_id):
-    """Shows full recipe and increments view"""
+    """Shows all fields in recipes & increments the views by 1"""
     mongo.db.recipes.find_one_and_update(
         {'_id': ObjectId(recipe_id)},
         {'$inc': {'views': 1}}
     )
     recipe_ingredients = mongo.db.recipes.recipe_ingredients.find_one()
     recipe = mongo.db.recipes.find_one_or_404({'_id': ObjectId(recipe_id)})
-    return render_template('recipe.html', recipe=recipe )
+    return render_template('recipe.html', recipe=recipe)
 
   
 if __name__ == '__main__':

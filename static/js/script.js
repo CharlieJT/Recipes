@@ -1,3 +1,4 @@
+const goBack = document.getElementsByClassName("go-back")
 /* 
 Whatever code is written inside the JQuery ready method will run once the page Document Object Modal (DOM)
 is ready to execute JavaScript code.
@@ -24,4 +25,11 @@ $(document).ready(() => {
     // Will remove active class and add new active class depending on which is matched with the pathname
     $('li.active').removeClass('active');
     $('a[href="' + location.pathname + '"]').closest('li').addClass('active');
+    
+    
+    $(goBack).on("click", () => {
+        window.history.back();
+    })
 });
+
+

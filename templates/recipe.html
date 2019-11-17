@@ -10,6 +10,16 @@
 
 <section>
     <div class="container-fluid recipe-page-container">
+        <row class="bread-crumb">
+            <div class="col back-button">
+                <span class="go-back">
+                    Back to previous page >
+                </span>
+                <span>
+                    {{ recipe.recipe_name }}
+                </span>
+            </div>
+        </row>
         <div class="row">
             <div class="col">
                 <p>Views: {{ recipe.views }}</p>

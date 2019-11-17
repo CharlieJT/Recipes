@@ -2,9 +2,16 @@
     width: 100%;
     max-width: 300px;
     max-height: 300px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
 }
 
 .recipe-description-row {
     height: 300px;
 }
 
+.back-button span:nth-child(1) {
+    display: inline;
+    cursor: pointer;
+    font-weight: bold;
+}
