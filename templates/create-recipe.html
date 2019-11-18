@@ -10,17 +10,56 @@
     </div>
 </div>
 
-<!-- Main Heading -->
+<!-- Input fields for creating a recipe -->
 
-<div id="recipe-container-listing" class="container-fluid ">
-    <div class="row recipe-row">
-        <!-- Main Recipes Header -->
-        <div class="recipe-listing-column col s12">
-            <h5>Why not create your own recipe!</h5>
+<section>
+    <div id="recipe-container-listing" class="container-fluid ">
+        <div class="row recipe-row">
+            <!-- Main Recipes Header -->
+            <div class="recipe-listing-column col s12">
+                <h5>Why not create your own recipe!</h5>
+            </div>
+            <div class="container create-recipe-fields">
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row recipe-name-input-row">
+                            <div class="input-field col s12">
+                                <input id="create-recipe-listing" type="text" class="validate w-100">
+                                <label for="create-recipe-listing-label">Recipe Name...</label>
+                            </div>
+                        </div>
+                        <div class="row recipe-description-input-row">
+                            <div class="input-field col s12">
+                                <input id="create-recipe-listing" type="text" class="validate w-100">
+                                <label for="create-recipe-listing-label">Recipe Description...</label>
+                            </div>
+                        </div>
+                        <div class="row recipe-ingredients-input-row">
+                            <div class="input-field col s12">
+                                <textarea id="create-recipe-listing" type="text" class="validate w-100 materialize-textarea" ></textarea>
+                                <label for="create-recipe-listing-label">Recipe Ingredients (Seperate each list item with a fullstop)...</label>
+                            </div>
+                        </div>
+                        <div class="row recipe-instructions-input-row">
+                            <div class="input-field col s12">
+                                <textarea id="create-recipe-listing" type="text" class="validate w-100 materialize-textarea" ></textarea>
+                                <label for="create-recipe-listing-label">Recipe Instructions (Seperate each list item with a fullstop)...</label>
+                            </div>
+                        </div>
+                        <div class="row recipe-image-url-row">
+                            <div class="input-field col s12">
+                                <input id="create-recipe-listing" type="text" class="validate w-100">
+                                <label for="create-recipe-listing-label">Recipe Image URL...</label>
+                            </div>
+                        </div>
+                        <div class="row recipe-button-row">
+                            <button class="btn waves-effect waves-light blue lighten-1" type="submit" name="action">Create Recipe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-
-
+</section>
 
 {% endblock %}

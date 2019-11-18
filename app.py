@@ -38,7 +38,7 @@ def recipe(recipe_id):
     
 @app.route('/create_recipe', methods=['GET', 'POST'])
 def create_recipe():
-    return render_template('create-recipe.html')
+    return render_template('create-recipe.html', title="Create Recipe")
 
   
 if __name__ == '__main__':
