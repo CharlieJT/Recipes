@@ -1,4 +1,4 @@
-const goBack = document.getElementsByClassName("go-back");
+const goBackOnePage = document.getElementsByClassName("go-back-one-page");
 const buttonCollapse = document.getElementsByClassName("button-collapse");
 const navbarContainer = document.getElementsByClassName("navbar-container");
 const recipeLogoImage = document.getElementsByClassName("recipe-logo-image");
@@ -32,7 +32,7 @@ $(document).ready(() => {
     $('a[href="' + location.pathname + '"]').closest('li').addClass('active');
     
     // Will take the user back to the previous page on click.
-    $(goBack).on("click", () => {
+    $(goBackOnePage).on("click", () => {
         window.history.back();
     });
 });

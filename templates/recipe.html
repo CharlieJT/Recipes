@@ -8,23 +8,28 @@
     </div>
 </div>
 
+<!-- Recipes Section -->
+
 <section>
     <div class="container-fluid recipe-page-container">
-        <row class="bread-crumb">
+        <!-- Breadcrumb -->
+        <div class="row bread-crumb">
             <div class="col back-button">
-                <span class="go-back">
+                <span class="go-back-one-page">
                     Back to previous page >
                 </span>
                 <span>
                     {{ recipe.recipe_name }}
                 </span>
             </div>
-        </row>
+        </div>
+        <!-- Views of Recipe -->
         <div class="row">
             <div class="col">
                 <p>Views: {{ recipe.views }}</p>
             </div>
         </div>
+        <!-- Recipe Description -->
         <div class="row recipe-description-row">
             <div class="col s12 l4">
                 <img class="recipe-page-image" src="{{recipe.recipe_image_url}}" alt="Recipe Page Image" />
@@ -37,12 +42,15 @@
                 </div>
             </div>
         </div>
+        <!-- Recipe Ingredients -->
         <div class="row">
             <div class="col s12 l6">
                 <h3>Ingredients</h3>
                 <ul class="recipe-ingredients">
-                    {% for i in recipe.recipe_ingredients.split('.') %}
-                    <li>{{ i }}.</li>
+                    {% for recipe_ingredient in recipe.recipe_ingredients.split('.') %}
+                        {% if recipe_ingredient != "" %}
+                            <li>{{ recipe_ingredient }}.</li>
+                        {% endif %}
                     {% endfor %}
                 </ul>
             </div>
@@ -50,14 +58,14 @@
                 <h3>Instructions</h3>
                 <ul class="recipe-insturctions">
                     {% for recipe_instruction in recipe.recipe_instructions.split('.') %}
-                    <li>{{ recipe_instruction }}.</li>
+                        {% if recipe_instruction != "" %}
+                            <li>{{ recipe_instruction }}.</li>
+                        {% endif %}
                     {% endfor %}
                 </ul>
             </div>
         </div>
     </div>
-
-
 </section>
 
 {% endblock %}

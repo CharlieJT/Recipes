@@ -35,14 +35,14 @@
             <ul id="nav-mobile" class="right hide-on-med-and-down navbar-listing">
                 <li class="tab"><a class="nav-link" href="{{ url_for('index') }}">Home</a></li>
                 <li class="tab"><a class="nav-link" href="{{ url_for('recipe_listing') }}">List of Recipes</a></li>
-                <li class="tab"><a class="nav-link" href="#test3">Create a Recipe</a></li>
+                <li class="tab"><a class="nav-link" href="{{ url_for('create_recipe') }}">Create a Recipe</a></li>
             </ul>
         </div>
     </nav>
     <ul class="side-nav" id="mobile-demo">
         <li class="tab"><a class="active" href="{{ url_for('index') }}">Home</a></li>
         <li class="tab"><a href="{{ url_for('recipe_listing') }}">List of Recipes</a></li>
-        <li class="tab"><a href="#test3">Create a Recipe</a></li>
+        <li class="tab"><a href="{{ url_for('create_recipe') }}">Create a Recipe</a></li>
     </ul>
 
     {% block content %} {% endblock %}
@@ -62,7 +62,7 @@
                     <ul class="footer-links">
                         <li><a class="pages-footer-link" href="{{ url_for('index') }}">Home</a></li>
                         <li><a class="pages-footer-link" href="{{ url_for('recipe_listing') }}">List Of Recipes</a></li>
-                        <li><a class="pages-footer-link" href="#!">Create Recipe</a></li>
+                        <li><a class="pages-footer-link" href="{{ url_for('create_recipe') }}">Create Recipe</a></li>
                     </ul>
                 </div>
             </div>

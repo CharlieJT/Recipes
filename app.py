@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, redirect, url_for, request
+from flask import Flask, render_template, redirect, url_for, request, flash
 from flask_pymongo import PyMongo, DESCENDING
 from bson.objectid import ObjectId
 
@@ -35,11 +35,15 @@ def recipe(recipe_id):
     recipe_ingredients = mongo.db.recipes.recipe_ingredients.find_one()
     recipe = mongo.db.recipes.find_one_or_404({'_id': ObjectId(recipe_id)})
     return render_template('recipe.html', recipe=recipe)
+    
+@app.route('/create_recipe', methods=['GET', 'POST'])
+def create_recipe():
+    return render_template('create-recipe.html')
 
   
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
-            port=int(os.environ.get('PORT')),
-            debug=True)
+    port=int(os.environ.get('PORT')),
+    debug=True)
 
 
