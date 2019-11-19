@@ -1,6 +1,17 @@
+
+/* ---------- Creating Recipe Form ----------*/
+
+.creating-recipe-form {
+  border: 1px solid grey;
+  padding: 6vw !important;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px grey;
+}
+
+
 /* ---------- Text Area ----------*/
 
-.input-field textarea:focus + label {
+.input-field textarea:focus+label {
   color: #42a5f5 !important;
 }
 
@@ -10,6 +21,6 @@
 }
 
 .recipe-button-row {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
