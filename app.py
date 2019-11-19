@@ -2,6 +2,7 @@ import os
 from flask import Flask, render_template, redirect, url_for, request, flash
 from flask_pymongo import PyMongo, DESCENDING
 from bson.objectid import ObjectId
+from forms import CreateRecipeForm
 
 app = Flask(__name__)
 
@@ -38,6 +39,19 @@ def recipe(recipe_id):
     
 @app.route('/create_recipe', methods=['GET', 'POST'])
 def create_recipe():
+    create_recipe_form = CreateRecipeForm(request.form)
+    
+    recipes_db = mongo.db.recipes
+    # insert the new recipe
+    recipes_db.insert_one({
+        'recipe_name': request.form['recipe_name'],
+        'recipe_description': request.form['recipe_description'],
+        'recipe_ingredients': request.form['recipe_ingredients'],
+        'recipe_instrictions': request.form['recipe_instrictions'],
+        'recipe_image_url': request.form['recipe_image_url'],
+        'views': 0
+    })
+    return redirect(url_for('index', title='New recipe has been created'))
     return render_template('create-recipe.html', title="Create Recipe")
 
   
