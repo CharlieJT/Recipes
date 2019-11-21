@@ -8,6 +8,26 @@
   box-shadow: 2px 2px 5px grey;
 }
 
+/* Validation */
+
+.insert-recipe-name-validation,
+.insert-recipe-ingredients-validation,
+.insert-recipe-description-validation,
+.insert-recipe-instructions-validation,
+.insert-recipe-image-url-validation {
+  display: none;
+}
+
+
+.insert-recipe-name-validation-flag,
+.insert-recipe-ingredients-validation-flag,
+.insert-recipe-description-validation-flag,
+.insert-recipe-instructions-validation-flag,
+.insert-recipe-image-url-validation-flag{
+  display: block;
+  color: red;
+}
+
 
 /* ---------- Text Area ----------*/
 

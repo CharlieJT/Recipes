@@ -42,13 +42,14 @@ def recipe(recipe_id):
 def create_recipe():
     """This shows a list of all of the recipes"""
     recipes_db = mongo.db.recipes
-    # This is insert a new value for each field
     return render_template('create-recipe.html')
+    
     
 @app.route('/insert_recipe', methods=['POST'])
 def insert_recipe():
     """This will add each field to the database"""
     recipe_db = mongo.db.recipes
+    # This is insert a new value for each field
     recipe_db.insert_one(request.form.to_dict())
     return redirect(url_for('recipe_listing'))
     
