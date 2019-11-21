@@ -21,34 +21,34 @@
             </div>
             <div class="container create-recipe-fields">
                 <div class="row">
-                    <form class="col s12 creating-recipe-form">
+                    <form action="{{ url_for('insert_recipe') }}" method="POST" class="col s12 creating-recipe-form" >
                         <div class="row recipe-name-input-row">
                             <div class="input-field col s12">
-                                <input id="create-recipe-listing" type="text" class="validate w-100">
+                                <input id="create-recipe-listing" name="recipe_name" type="text" class="validate w-100">
                                 <label for="create-recipe-listing-label">Recipe Name...</label>
                             </div>
                         </div>
                         <div class="row recipe-description-input-row">
                             <div class="input-field col s12">
-                                <input id="create-recipe-listing" type="text" class="validate w-100">
+                                <input id="create-recipe-listing" name="recipe_description" type="text" class="validate w-100">
                                 <label for="create-recipe-listing-label">Recipe Description...</label>
                             </div>
                         </div>
                         <div class="row recipe-ingredients-input-row">
                             <div class="input-field col s12">
-                                <textarea id="create-recipe-listing" type="text" class="validate w-100 materialize-textarea" ></textarea>
+                                <textarea id="create-recipe-listing" name="recipe_ingredients" type="text" class="validate w-100 materialize-textarea" ></textarea>
                                 <label for="create-recipe-listing-label">Recipe Ingredients (Seperate each list item with a fullstop)...</label>
                             </div>
                         </div>
                         <div class="row recipe-instructions-input-row">
                             <div class="input-field col s12">
-                                <textarea id="create-recipe-listing" type="text" class="validate w-100 materialize-textarea" ></textarea>
+                                <textarea id="create-recipe-listing" name="recipe_instructions" type="text" class="validate w-100 materialize-textarea" ></textarea>
                                 <label for="create-recipe-listing-label">Recipe Instructions (Seperate each list item with a fullstop)...</label>
                             </div>
                         </div>
                         <div class="row recipe-image-url-row">
                             <div class="input-field col s12">
-                                <input id="create-recipe-listing" type="text" class="validate w-100">
+                                <input id="create-recipe-listing" name="recipe_image_url" type="text" class="validate w-100">
                                 <label for="create-recipe-listing-label">Recipe Image URL...</label>
                             </div>
                         </div>
