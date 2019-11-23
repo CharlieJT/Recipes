@@ -26,6 +26,8 @@
 .insert-recipe-image-url-validation-flag{
   display: block;
   color: red;
+  font-style: italic;
+  font-size: 0.9rem;
 }
 
 

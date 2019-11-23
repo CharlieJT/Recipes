@@ -42,6 +42,22 @@ $(document).ready(() => {
     of the field.
     */
     
+    $('.insert-recipe-name').on('keypress', () => {
+         $('.insert-recipe-name-validation').removeClass('insert-recipe-name-validation-flag');
+     });
+     $('.insert-recipe-description').on('keypress', () => {
+         $('.insert-recipe-description-validation').removeClass('insert-recipe-description-validation-flag');
+     });
+     $('.insert-recipe-ingredients').on('keypress', () => {
+         $('.insert-recipe-ingredients-validation').removeClass('insert-recipe-ingredients-validation-flag');
+     });
+     $('.insert-recipe-instructions').on('keypress', () => {
+         $('.insert-recipe-instructions-validation').removeClass('insert-recipe-instructions-validation-flag');
+     });
+     $('.insert-recipe-image-url').on('keypress', () => {
+         $('.insert-recipe-image-url-validation').removeClass('insert-recipe-image-url-validation-flag');
+     });
+    
     $(createRecipeSubmitButton).on('click', () => {
         // Constants used to target each form field's value on create recipe page
         const inputRecipeName = $("input[type=text][name=recipe_name]").val();
@@ -49,7 +65,8 @@ $(document).ready(() => {
         const inputRecipeIngredients = $("textarea[type=text][name=recipe_ingredients]").val();
         const inputRecipeInstructions = $("textarea[type=text][name=recipe_instructions]").val();
         const inputRecipeImageUrl = $("input[type=text][name=recipe_image_url]").val();
-
+        
+        
         if (inputRecipeName.length === 0) {
             $('.insert-recipe-name-validation').addClass('insert-recipe-name-validation-flag');
         }
@@ -85,4 +102,6 @@ $(document).ready(() => {
             $('.insert-recipe-image-url-validation').removeClass('insert-recipe-image-url-validation-flag');
         }
     })
+    
+     
 });
