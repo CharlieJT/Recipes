@@ -5,8 +5,8 @@ const buttonCollapse = document.getElementsByClassName("button-collapse");
 const navbarContainer = document.getElementsByClassName("navbar-container");
 const recipeLogoImage = document.getElementsByClassName("recipe-logo-image");
 const toTop = document.getElementsByClassName("to-top");
-const createRecipeSubmitButton = document.getElementsByClassName("create-recipe-submit-button")
-
+const createRecipeSubmitButton = document.getElementsByClassName("create-recipe-submit-button");
+    
 
 /* 
 Whatever code is written inside the JQuery ready method will run once the page Document Object Modal (DOM)
@@ -33,41 +33,43 @@ $(document).ready(() => {
     $('a[href="' + location.pathname + '"]').closest('li').addClass('active');
 
     // Will take the user back to the previous page on click.
-    $(goBackOnePage).on("click", () => {
+    $(goBackOnePage).on('click', () => {
         window.history.back();
     });
     
+    $('.button-collapse').sideNav();
+
     /*
     Will be resonsible for form validation, depending on which field is empty, it will throw a message at the bottom
     of the field.
     */
-    
+
     $('.insert-recipe-name').on('click', () => {
-         $('.insert-recipe-name-validation').removeClass('insert-recipe-name-validation-flag');
-     }).on('keypress', () => {
-         $('.insert-recipe-name-validation').removeClass('insert-recipe-name-validation-flag');
-     });
-     $('.insert-recipe-description').on('click', () => {
-         $('.insert-recipe-description-validation').removeClass('insert-recipe-description-validation-flag');
-     }).on('keypress', () => {
-         $('.insert-recipe-description-validation').removeClass('insert-recipe-description-validation-flag');
-     });
-     $('.insert-recipe-ingredients').on('click', () => {
-         $('.insert-recipe-ingredients-validation').removeClass('insert-recipe-ingredients-validation-flag');
-     }).on('keypress', () => {
-         $('.insert-recipe-ingredients-validation').removeClass('insert-recipe-ingredients-validation-flag');
-     });
-     $('.insert-recipe-instructions').on('click', () => {
-         $('.insert-recipe-instructions-validation').removeClass('insert-recipe-instructions-validation-flag');
-     }).on('keypress', () => {
-         $('.insert-recipe-instructions-validation').removeClass('insert-recipe-instructions-validation-flag');
-     });
-     $('.insert-recipe-image-url').on('click', () => {
-         $('.insert-recipe-image-url-validation').removeClass('insert-recipe-image-url-validation-flag');
-     }).on('keypress', () => {
-         $('.insert-recipe-image-url-validation').removeClass('insert-recipe-image-url-validation-flag');
-     });
-    
+        $('.insert-recipe-name-validation').removeClass('insert-recipe-name-validation-flag');
+    }).on('keypress', () => {
+        $('.insert-recipe-name-validation').removeClass('insert-recipe-name-validation-flag');
+    });
+    $('.insert-recipe-description').on('click', () => {
+        $('.insert-recipe-description-validation').removeClass('insert-recipe-description-validation-flag');
+    }).on('keypress', () => {
+        $('.insert-recipe-description-validation').removeClass('insert-recipe-description-validation-flag');
+    });
+    $('.insert-recipe-ingredients').on('click', () => {
+        $('.insert-recipe-ingredients-validation').removeClass('insert-recipe-ingredients-validation-flag');
+    }).on('keypress', () => {
+        $('.insert-recipe-ingredients-validation').removeClass('insert-recipe-ingredients-validation-flag');
+    });
+    $('.insert-recipe-instructions').on('click', () => {
+        $('.insert-recipe-instructions-validation').removeClass('insert-recipe-instructions-validation-flag');
+    }).on('keypress', () => {
+        $('.insert-recipe-instructions-validation').removeClass('insert-recipe-instructions-validation-flag');
+    });
+    $('.insert-recipe-image-url').on('click', () => {
+        $('.insert-recipe-image-url-validation').removeClass('insert-recipe-image-url-validation-flag');
+    }).on('keypress', () => {
+        $('.insert-recipe-image-url-validation').removeClass('insert-recipe-image-url-validation-flag');
+    });
+
     $(createRecipeSubmitButton).on('click', () => {
         // Constants used to target each form field's value on create recipe page
         const inputRecipeName = $("input[type=text][name=recipe_name]").val();
@@ -75,8 +77,8 @@ $(document).ready(() => {
         const inputRecipeIngredients = $("textarea[type=text][name=recipe_ingredients]").val();
         const inputRecipeInstructions = $("textarea[type=text][name=recipe_instructions]").val();
         const inputRecipeImageUrl = $("input[type=text][name=recipe_image_url]").val();
-        
-        
+
+
         if (inputRecipeName.length === 0) {
             $('.insert-recipe-name-validation').addClass('insert-recipe-name-validation-flag');
         }
@@ -111,7 +113,5 @@ $(document).ready(() => {
         else {
             $('.insert-recipe-image-url-validation').removeClass('insert-recipe-image-url-validation-flag');
         }
-    })
-    
-     
+    });
 });
