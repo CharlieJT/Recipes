@@ -10,8 +10,27 @@
     height: 300px;
 }
 
+.edit-and-delete-buttons {
+    float: right;
+}
+
 .back-button span:nth-child(1) {
     display: inline;
     cursor: pointer;
     font-weight: bold;
 }
+
+/* ---------- Media Queries ----------*/
+
+@media only screen and (max-width: 315px) {
+    .delete-recipe-button {
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+  .edit-and-delete-buttons {
+    float: none;
+        padding-left: 10px;
+    }
+}    

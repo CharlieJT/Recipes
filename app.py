@@ -15,7 +15,7 @@ mongo = PyMongo(app)
 @app.route('/index')
 def index():
     """This shows a list of 3 recipes which have the highest views"""
-    recipes=mongo.db.recipes.find().sort([('views-per-page', DESCENDING)]).limit(3)
+    recipes=mongo.db.recipes.find().sort([('views', DESCENDING)]).limit(3)
     return render_template('index.html', title="Home", recipes=recipes)
     
     
@@ -52,6 +52,11 @@ def insert_recipe():
     # This is insert a new value for each field
     recipe_db.insert_one(request.form.to_dict())
     return redirect(url_for('recipe_listing'))
+    
+@app.route('/edit_recipe/<recipe_id>')
+def edit_recipe(recipe_id):
+    recipes_db = mongo.db.recipes.find_one({ '_id': ObjectId(recipe_id) })
+    return render_template('edit-recipe.html')
     
   
 if __name__ == '__main__':
