@@ -56,7 +56,7 @@ def insert_recipe():
 @app.route('/edit_recipe/<recipe_id>')
 def edit_recipe(recipe_id):
     recipes_db = mongo.db.recipes.find_one({ '_id': ObjectId(recipe_id) })
-    return render_template('edit-recipe.html')
+    return render_template('edit-recipe.html', recipe=recipes_db)
     
   
 if __name__ == '__main__':

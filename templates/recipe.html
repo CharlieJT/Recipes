@@ -25,7 +25,9 @@
         </div>
         <!-- Edit and Delete buttons --> 
         <div class="col edit-and-delete-buttons">
-            <button class="btn waves-effect waves-light blue lighten-1 edit-recipe-button" type="submit" name="action">Edit Recipe</button>
+            <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
+                <button class="btn waves-effect waves-light blue lighten-1 edit-recipe-button" type="submit" name="action">Edit Recipe</button>
+            </a>
             <button class="btn waves-effect waves-light red lighten-1 delete-recipe-button" type="submit" name="action">Delete Recipe</button>
         </div>
         <!-- Views of Recipe -->

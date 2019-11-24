@@ -1,0 +1,6 @@
+.edit-recipe-form {
+  border: 1px solid grey;
+  padding: 6vw !important;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px grey;
+}
