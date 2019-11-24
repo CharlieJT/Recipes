@@ -32,7 +32,6 @@ def recipe(recipe_id):
         {'_id': ObjectId(recipe_id)},
         {'$inc': {'views': 1}}
     )
-    recipe_ingredients = mongo.db.recipes.recipe_ingredients.find_one()
     recipe = mongo.db.recipes.find_one_or_404({'_id': ObjectId(recipe_id)})
     return render_template('recipe.html', title="Recipe", recipe=recipe)
     

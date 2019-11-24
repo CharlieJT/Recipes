@@ -38,6 +38,8 @@ $(document).ready(() => {
     });
     
     $('.button-collapse').sideNav();
+    
+    $('.modal').modal();
 
     /*
     Will be resonsible for form validation, depending on which field is empty, it will throw a message at the bottom
