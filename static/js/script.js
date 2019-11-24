@@ -34,7 +34,7 @@ $(document).ready(() => {
 
     // Will take the user back to the previous page on click.
     $(goBackOnePage).on('click', () => {
-        window.history.back();
+        window.history.back(1);
     });
     
     $('.button-collapse').sideNav();
