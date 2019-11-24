@@ -34,14 +34,14 @@ def recipe(recipe_id):
     )
     recipe_ingredients = mongo.db.recipes.recipe_ingredients.find_one()
     recipe = mongo.db.recipes.find_one_or_404({'_id': ObjectId(recipe_id)})
-    return render_template('recipe.html', recipe=recipe)
+    return render_template('recipe.html', title="Recipe", recipe=recipe)
     
     
 @app.route('/create_recipe')
 def create_recipe():
     """This shows a list of all of the recipes"""
     recipes_db = mongo.db.recipes
-    return render_template('create-recipe.html')
+    return render_template('create-recipe.html', title="Create Recipe")
     
     
 @app.route('/insert_recipe', methods=['POST'])
@@ -56,7 +56,21 @@ def insert_recipe():
 @app.route('/edit_recipe/<recipe_id>')
 def edit_recipe(recipe_id):
     recipes_db = mongo.db.recipes.find_one({ '_id': ObjectId(recipe_id) })
-    return render_template('edit-recipe.html', recipe=recipes_db)
+    return render_template('edit-recipe.html', title="Edit Recipe", recipe=recipes_db)
+    
+
+@app.route('/update_recipe/<recipe_id>', methods=['POST'])
+def update_recipe(recipe_id):
+    recipe_db = mongo.db.recipes
+    recipe_db.update({ '_id': ObjectId(recipe_id)}, 
+    {
+        'recipe_name':request.form.get('recipe_name'),
+        'recipe_description':request.form.get('recipe_description'),
+        'recipe_ingredients': request.form.get('recipe_ingredients'),
+        'recipe_instructions': request.form.get('recipe_instructions'),
+        'recipe_image_url':request.form.get('recipe_image_url')
+    })
+    return redirect(url_for('recipe_listing'))
     
   
 if __name__ == '__main__':
