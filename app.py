@@ -3,7 +3,6 @@ from flask import Flask, render_template, redirect, url_for, request, flash
 from flask_pymongo import PyMongo, DESCENDING
 from bson.objectid import ObjectId
 
-
 app = Flask(__name__)
 
 app.config["MONGO_DBNAME"] = 'myRecipes'
@@ -52,6 +51,7 @@ def insert_recipe():
     # This is insert a new value for each field
     recipe_db.insert_one(request.form.to_dict())
     return redirect(url_for('recipe_listing'))
+    
     
 @app.route('/edit_recipe/<recipe_id>')
 def edit_recipe(recipe_id):
