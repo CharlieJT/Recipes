@@ -53,7 +53,7 @@
         <div class="row">
             <div class="col s12 l6">
                 <h3>Ingredients</h3>
-                <ul class="recipe-ingredients">
+                <ol class="recipe-ingredients">
                     {% for recipe_ingredient in recipe.recipe_ingredients.split('.') %}
                         {% if recipe_ingredient != "" %}
                             <li>{{ recipe_ingredient }}.</li>
@@ -63,10 +63,11 @@
             </div>
             <div class="col s12 l6">
                 <h3>Instructions</h3>
-                <ul class="recipe-insturctions">
+                <ol class="recipe-insturctions">
                     {% for recipe_instruction in recipe.recipe_instructions.split('.') %}
                         {% if recipe_instruction != "" %}
-                            <li>{{ recipe_instruction }}.</li>
+                            <br/>
+                            <li><b>Step {{ loop.index }}: </b>{{ recipe_instruction }}.</li>
                         {% endif %}
                     {% endfor %}
                 </ul>

@@ -6,6 +6,11 @@
     border: 1px solid #ccc;
 }
 
+.recipe-ingredients li,
+.recipe-insturctions li{
+    list-style-type: disc;
+}
+
 .recipe-description-row {
     height: 300px;
 }
