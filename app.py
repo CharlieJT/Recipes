@@ -55,12 +55,14 @@ def insert_recipe():
     
 @app.route('/edit_recipe/<recipe_id>')
 def edit_recipe(recipe_id):
+    """This will find a specific recipe from the database"""
     recipes_db = mongo.db.recipes.find_one({ '_id': ObjectId(recipe_id) })
     return render_template('edit-recipe.html', title="Edit Recipe", recipe=recipes_db)
     
 
 @app.route('/update_recipe/<recipe_id>', methods=['POST'])
 def update_recipe(recipe_id):
+    """This shows a list of all of the recipes"""
     recipe_db = mongo.db.recipes
     recipe_db.update({ '_id': ObjectId(recipe_id)}, 
     {
@@ -70,6 +72,13 @@ def update_recipe(recipe_id):
         'recipe_instructions': request.form.get('recipe_instructions'),
         'recipe_image_url':request.form.get('recipe_image_url')
     })
+    return redirect(url_for('recipe_listing'))
+    
+    
+@app.route('/delete_recipe/<recipe_id>')
+def delete_recipe(recipe_id):
+    """This shows a list of all of the recipes"""
+    mongo.db.recipes.remove({ '_id': ObjectId(recipe_id) })
     return redirect(url_for('recipe_listing'))
     
   
