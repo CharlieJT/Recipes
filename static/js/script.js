@@ -44,27 +44,27 @@ $(document).ready(() => {
     of the field.
     */
 
-    $('.insert-recipe-name').on('click', () => {
+    $('.insert-recipe-name').on('change', () => {
         $('.insert-recipe-name-validation').removeClass('insert-recipe-name-validation-flag');
     }).on('keypress', () => {
         $('.insert-recipe-name-validation').removeClass('insert-recipe-name-validation-flag');
     });
-    $('.insert-recipe-description').on('click', () => {
+    $('.insert-recipe-description').on('change', () => {
         $('.insert-recipe-description-validation').removeClass('insert-recipe-description-validation-flag');
     }).on('keypress', () => {
         $('.insert-recipe-description-validation').removeClass('insert-recipe-description-validation-flag');
     });
-    $('.insert-recipe-ingredients').on('click', () => {
+    $('.insert-recipe-ingredients').on('change', () => {
         $('.insert-recipe-ingredients-validation').removeClass('insert-recipe-ingredients-validation-flag');
     }).on('keypress', () => {
         $('.insert-recipe-ingredients-validation').removeClass('insert-recipe-ingredients-validation-flag');
     });
-    $('.insert-recipe-instructions').on('click', () => {
+    $('.insert-recipe-instructions').on('change', () => {
         $('.insert-recipe-instructions-validation').removeClass('insert-recipe-instructions-validation-flag');
     }).on('keypress', () => {
         $('.insert-recipe-instructions-validation').removeClass('insert-recipe-instructions-validation-flag');
     });
-    $('.insert-recipe-image-url').on('click', () => {
+    $('.insert-recipe-image-url').on('change', () => {
         $('.insert-recipe-image-url-validation').removeClass('insert-recipe-image-url-validation-flag');
     }).on('keypress', () => {
         $('.insert-recipe-image-url-validation').removeClass('insert-recipe-image-url-validation-flag');
