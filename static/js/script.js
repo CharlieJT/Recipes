@@ -6,7 +6,6 @@ const navbarContainer = document.getElementsByClassName("navbar-container");
 const recipeLogoImage = document.getElementsByClassName("recipe-logo-image");
 const toTop = document.getElementsByClassName("to-top");
 const createRecipeSubmitButton = document.getElementsByClassName("create-recipe-submit-button");
-    
 
 /* 
 Whatever code is written inside the JQuery ready method will run once the page Document Object Modal (DOM)

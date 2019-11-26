@@ -31,7 +31,7 @@
     <nav class="navbar-container N/A transparent">
         <div class="nav-wrapper">
             <a href="{{ url_for('index') }}" id="recipes-logo">
-                <img class="recipe-logo-image" src="static/images/recipe-nest.png" alt="Recipes Logo"/>
+                <img class="recipe-logo-image" src="{{ url_for('static', filename='/images/recipe-nest.png') }}" alt="Recipes Logo"/>
             </a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down navbar-listing">
