@@ -36,15 +36,19 @@ $(document).ready(() => {
         window.history.back(1);
     });
     
+    // This is responsible for showing the side draw on mobile display.
     $('.button-collapse').sideNav();
     
+    // Will show delete modal when modal button is clicked.
     $('.modal').modal();
+
 
     /*
     Will be resonsible for form validation, depending on which field is empty, it will throw a message at the bottom
-    of the field.
+    of the field. When a key is pressed or when anything changes in each input fields, it will remove any warnings 
+    that the specific field has.
     */
-
+    
     $('.insert-recipe-name').on('change', () => {
         $('.insert-recipe-name-validation').removeClass('insert-recipe-name-validation-flag');
     }).on('keypress', () => {
@@ -70,6 +74,13 @@ $(document).ready(() => {
     }).on('keypress', () => {
         $('.insert-recipe-image-url-validation').removeClass('insert-recipe-image-url-validation-flag');
     });
+    
+    
+    /*
+    This targets the button that submits the form, this will find out if each value has an input by finding out
+    if the length of each input field has a length of 0. If it does, it will add an error message to any
+    field with a value length of 0.
+    */
 
     $(createRecipeSubmitButton).on('click', () => {
         // Constants used to target each form field's value on create recipe page

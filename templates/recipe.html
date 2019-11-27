@@ -49,16 +49,18 @@
                 </div>
             </div>
         </div>
-        <!-- Recipe Ingredients -->
+        
         <div class="row">
+            <!-- Recipe Ingredients -->
             <div class="col s12 l6">
                 <h3>Ingredients</h3>
                 <ol class="recipe-ingredients">
                     {% for recipe_ingredient in recipe.recipe_ingredients.split('.') %} {% if recipe_ingredient != "" %}
                     <li>{{ recipe_ingredient }}.</li>
                     {% endif %} {% endfor %}
-                    </ul>
+                </ol>
             </div>
+            <!-- Recipe Instructions -->
             <div class="col s12 l6">
                 <h3>Instructions</h3>
                 <ul class="recipe-insturctions">

@@ -57,6 +57,7 @@ html, body {
     z-index: 10000;
 }
 
+
 /* ---------- Main Image ----------*/
 
 .title-container {
@@ -125,7 +126,6 @@ main-recipe-images-column {
     color: #fff;
 }
 
-
 .input-field input[type=text]:focus+label {
     color: #fff;
 }
@@ -162,7 +162,6 @@ main-recipe-images-column {
 }
 
 
-
 /* ---------- Home Page Cards ----------*/
 
 .recipe-card {
@@ -188,7 +187,6 @@ main-recipe-images-column {
 }
 
 
-
 /* ---------- Footer ----------*/
 
 .footer-bottom {
@@ -203,6 +201,7 @@ main-recipe-images-column {
 .footer-links .active a {
     color: #fff;
 }
+
 
 /* ---------- Back to top icon ----------*/
 
@@ -236,13 +235,16 @@ main-recipe-images-column {
 	border-color: inherit;
 	transition: transform .5s ease-in;
 }
+
 .to-top:hover {
 	border-color: #42a5f5;
 }
+
 .to-top:hover:before {
     content: url(../images/chevron-up-blue.png);
 	transform: rotate(360deg);
 }
+
 
 /* ---------- Creating Recipe Form ----------*/
 
@@ -262,7 +264,6 @@ main-recipe-images-column {
 .insert-recipe-image-url-validation {
   display: none;
 }
-
 
 .insert-recipe-name-validation-flag,
 .insert-recipe-ingredients-validation-flag,
@@ -291,6 +292,7 @@ main-recipe-images-column {
   display: flex;
   justify-content: center;
 }
+
 
 /* ---------- Recipe Listing ----------*/
 
@@ -423,6 +425,7 @@ main-recipe-images-column {
     cursor: pointer;
     font-weight: bold;
 }
+
 
 /* ---------- Edit Recipe Form ----------*/
 
