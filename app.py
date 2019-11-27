@@ -2,6 +2,7 @@ import os
 from flask import Flask, render_template, redirect, url_for, request, flash
 from flask_pymongo import PyMongo, DESCENDING
 from bson.objectid import ObjectId
+import re
 
 app = Flask(__name__)
 
@@ -72,6 +73,24 @@ def update_recipe(recipe_id):
         'recipe_image_url':request.form.get('recipe_image_url')
     })
     return redirect(url_for('recipe_listing'))
+    
+
+@app.route('/search')
+def search():
+    """Provides logic for search bar"""
+    orig_query = request.args['query']
+    # using regular expression setting option for any case
+    query = {'$regex': re.compile('.*{}.*'.format(orig_query)), '$options': 'i'}
+    # find instances of the entered word in title, tags or ingredients
+    results = mongo.db.recipes.find({
+        '$or': [
+            {'recipe_name': query},
+            {'recipe_description': query},
+            {'recipe_instructions': query},
+        ]
+    })
+    return render_template('search.html', title="Search results for", query=orig_query, results=results)
+
     
     
 @app.route('/delete_recipe/<recipe_id>')

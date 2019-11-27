@@ -16,7 +16,7 @@
     <div class="row recipe-row">
         <!-- Main Recipes Header -->
         <div class="recipe-listing-column col s12">
-            <h5>Welcome to the nest!</h5>
+            <h5>{{title}} '{{query}}'</h5>
         </div>
         <div class="container">
             <div class="row">
@@ -34,7 +34,7 @@
             </div>
         </div>
         <!-- Each recipe card -->
-        {% for recipe in recipes %}
+        {% for recipe in results %}
 
         <div class="col s12 m6 l4 card-container-listing">
             <div class="card-surrounding">
