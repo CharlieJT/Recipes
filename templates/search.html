@@ -16,7 +16,7 @@
     <div class="row recipe-row">
         <!-- Main Recipes Header -->
         <div class="recipe-listing-column col s12">
-            <h5>{{title}} '{{query}}'</h5>
+            <h5>'{{ results|length }}' {{title}} <em>'{{query}}'</em></h5>
         </div>
         <div class="container">
             <div class="row">
@@ -34,32 +34,36 @@
             </div>
         </div>
         <!-- Each recipe card -->
-        {% for recipe in results %}
-
-        <div class="col s12 m6 l4 card-container-listing">
-            <div class="card-surrounding">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator recipe-image" src="{{recipe.recipe_image_url}}">
-                    </div>
-                    <div class="card-content">
-                        <div class='card-title-spacer'>
-                            <div class="card-title activator grey-text text-darken-4 recipe-name">{{recipe.recipe_name}}<i class="material-icons right more-info">more_vert</i></div>
+        {% if results|length > 0 %}
+            {% for recipe in results %}
+                <div class="col s12 m6 l4 card-container-listing">
+                    <div class="card-surrounding">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator recipe-image" src="{{recipe.recipe_image_url}}">
+                            </div>
+                            <div class="card-content">
+                                <div class='card-title-spacer'>
+                                    <div class="card-title activator grey-text text-darken-4 recipe-name">{{recipe.recipe_name}}<i class="material-icons right more-info">more_vert</i></div>
+                                </div>
+                                <div class="button-container">
+                                    <a href="{{ url_for('recipe', recipe_id=recipe._id) }}">
+                                        <button class="btn waves-effect waves-light blue lighten-1" type="submit" name="action">View Recipe</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-reveal recipe-close">
+                                <span class="card-title grey-text text-darken-4">{{recipe.recipe_name}}<i class="material-icons right">close</i></span>
+                                <p>{{recipe.recipe_description}}</p>
+                            </div>
                         </div>
-                        <div class="button-container">
-                            <a href="{{ url_for('recipe', recipe_id=recipe._id) }}">
-                                <button class="btn waves-effect waves-light blue lighten-1" type="submit" name="action">View Recipe</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-reveal recipe-close">
-                        <span class="card-title grey-text text-darken-4">{{recipe.recipe_name}}<i class="material-icons right">close</i></span>
-                        <p>{{recipe.recipe_description}}</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        {% endfor %}
+                
+            {% endfor %}
+        {% else %}
+            <div>No Results Found</div>
+        {% endif %}
     </div>
 </div>
 

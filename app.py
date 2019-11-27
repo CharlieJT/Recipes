@@ -77,11 +77,11 @@ def update_recipe(recipe_id):
 
 @app.route('/search')
 def search():
-    """Provides logic for search bar"""
+    """This is the logic behind the search bars"""
     orig_query = request.args['query']
-    # using regular expression setting option for any case
+    # Using regular expressions to search for any case
     query = {'$regex': re.compile('.*{}.*'.format(orig_query)), '$options': 'i'}
-    # find instances of the entered word in title, tags or ingredients
+    # This will do a find amoungst recipe name, recipe description & recipe instructions
     results = mongo.db.recipes.find({
         '$or': [
             {'recipe_name': query},
@@ -89,7 +89,12 @@ def search():
             {'recipe_instructions': query},
         ]
     })
-    return render_template('search.html', title="Search results for", query=orig_query, results=results)
+    
+    recipes = []
+    for result in results:
+        recipes.append(result)
+    
+    return render_template('search.html', title="Search results for", query=orig_query, results=recipes)
 
     
     
