@@ -437,6 +437,38 @@ main-recipe-images-column {
 }
 
 
+/* ---------- Error 404 Page  ----------*/
+
+.error-404-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.error-404-row img {
+    width: 250px;
+}
+
+.error-404-row h3 {
+    margin: 1.46rem 0 .168rem 0;
+}
+
+.error-404-row h4,
+.error-404-row h5 {
+    text-align: center;
+}
+
+.error-404-home-button {
+    display: flex;
+    justify-content: center;
+}
+
+.error-404-divider {
+    width: 65px;
+}
+
+
 /* ---------- Media Queries ----------*/
 
 @media only screen and (max-width: 315px) {

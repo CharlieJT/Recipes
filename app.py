@@ -95,7 +95,6 @@ def search():
         recipes.append(result)
     
     return render_template('search.html', title="Search results for", query=orig_query, results=recipes)
-
     
     
 @app.route('/delete_recipe/<recipe_id>')
@@ -103,6 +102,11 @@ def delete_recipe(recipe_id):
     """This shows a list of all of the recipes"""
     mongo.db.recipes.remove({ '_id': ObjectId(recipe_id) })
     return redirect(url_for('recipe_listing'))
+    
+    
+@app.errorhandler(404)
+def handle_404(unfound):
+    return render_template('error404.html', title="Error 404", unfound=unfound)
     
   
 if __name__ == '__main__':
