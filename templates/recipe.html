@@ -15,9 +15,16 @@
         <!-- Breadcrumb -->
         <div class="row bread-crumb">
             <div class="col back-button">
-                <span class="go-back-one-page">
-                    Back to previous page >
-                </span>
+                <a class="bread-crumb-navigator" href="{{ url_for('index') }}">
+                    <span>
+                        Home >
+                    </span>
+                </a>
+                <a class="bread-crumb-navigator" href="{{ url_for('recipe_listing') }}">
+                    <span>
+                        Recipe Listing >
+                    </span>
+                </a>
                 <span>
                     {{ recipe.recipe_name }}
                 </span>
@@ -49,7 +56,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="row">
             <!-- Recipe Ingredients -->
             <div class="col s12 l6">

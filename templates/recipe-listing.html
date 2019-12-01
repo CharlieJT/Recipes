@@ -13,7 +13,19 @@
 <!-- Most viewed Recipe Cards -->
 
 <div id="recipe-container-listing" class="container-fluid ">
+
     <div class="row recipe-row">
+        <!-- Breadcrumb -->
+        <div class="col back-button">
+            <a class="bread-crumb-navigator" href="{{ url_for('index') }}">
+                <span>
+                    Home >
+                </span>
+            </a>
+            <span>
+                Recipe Listing
+            </span>
+        </div>
         <!-- Main Recipes Header -->
         <div class="recipe-listing-column col s12">
             <h5>Welcome to the nest!</h5>
