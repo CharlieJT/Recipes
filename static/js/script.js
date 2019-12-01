@@ -36,8 +36,6 @@ $(document).ready(() => {
         window.history.back(1);
     });
     
-    go-back-two-page
-    
     // This is responsible for showing the side draw on mobile display.
     $('.button-collapse').sideNav();
     

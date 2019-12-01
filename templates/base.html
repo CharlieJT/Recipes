@@ -22,28 +22,29 @@
 </head>
 
 <body>
-    <!-- Main Navbar -->
-    <nav class="navbar-container N/A transparent">
-        <div class="nav-wrapper">
-            <a href="{{ url_for('index') }}" id="recipes-logo">
-                <img class="recipe-logo-image" src="{{ url_for('static', filename='/images/recipe-nest.png') }}" alt="Recipes Logo"/>
-            </a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down navbar-listing">
-                <li class="tab"><a class="nav-link" href="{{ url_for('index') }}">Home</a></li>
-                <li class="tab"><a class="nav-link" href="{{ url_for('recipe_listing') }}">List of Recipes</a></li>
-                <li class="tab"><a class="nav-link" href="{{ url_for('create_recipe') }}">Create a Recipe</a></li>
-            </ul>
-        </div>
-    </nav>
-    <ul class="side-nav" id="mobile-demo">
-        <li class="tab"><a class="active" href="{{ url_for('index') }}">Home</a></li>
-        <li class="tab"><a href="{{ url_for('recipe_listing') }}">List of Recipes</a></li>
-        <li class="tab"><a href="{{ url_for('create_recipe') }}">Create a Recipe</a></li>
-    </ul>
-
-    {% block content %} {% endblock %}
-
+    <div class="main-content">
+        
+        <!-- Main Navbar -->
+        <nav class="navbar-container N/A transparent">
+            <div class="nav-wrapper">
+                <a href="{{ url_for('index') }}" id="recipes-logo">
+                    <img class="recipe-logo-image" src="{{ url_for('static', filename='/images/recipe-nest.png') }}" alt="Recipes Logo"/>
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down navbar-listing">
+                    <li class="tab"><a class="nav-link" href="{{ url_for('index') }}">Home</a></li>
+                    <li class="tab"><a class="nav-link" href="{{ url_for('recipe_listing') }}">List of Recipes</a></li>
+                    <li class="tab"><a class="nav-link" href="{{ url_for('create_recipe') }}">Create a Recipe</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="side-nav" id="mobile-demo">
+            <li class="tab"><a class="active" href="{{ url_for('index') }}">Home</a></li>
+            <li class="tab"><a href="{{ url_for('recipe_listing') }}">List of Recipes</a></li>
+            <li class="tab"><a href="{{ url_for('create_recipe') }}">Create a Recipe</a></li>
+        </ul>
+        {% block content %} {% endblock %}
+    </div>
     <!-- Footer -->
     <footer class="page-footer blue lighten-1">
         <div class="container">
@@ -51,7 +52,7 @@
                 <div class="col l6 s12">
                     <h5 class="white-text">Recipe Nest</h5>
                     <p class="grey-text text-lighten-4"></p>
-                    <p class="grey-text text-lighten-4">Recipe Nest was designed to give the user control over recipe ideas. You are given the option to browse for different recipes and if you register and login, you can create your own recipes, make changes to your recipes and delete recipes
+                    <p class="footer-text grey-text text-lighten-4">Recipe Nest was designed to give the user control over recipe ideas. You are given the option to browse for different recipes and if you register and login, you can create your own recipes, make changes to your recipes and delete recipes
                         that you no longer want.</p>
                 </div>
                 <div class="col l4 offset-l2 s12">

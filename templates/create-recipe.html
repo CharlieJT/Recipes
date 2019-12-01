@@ -19,7 +19,7 @@
             <div class="col back-button">
                 <a class="bread-crumb-navigator" href="{{ url_for('index') }}">
                     <span>
-                        Home >
+                        Home
                     </span>
                 </a>
                 <span>
@@ -38,35 +38,41 @@
                         <div class="row recipe-name-input-row">
                             <div class="input-field col s12">
                                 <input id="create-recipe-listing" name="recipe_name" type="text" class="w-100 insert-recipe-name" required>
-                                <label for="create-recipe-listing-label">Recipe Name...</label>
+                                <label for="create-recipe-listing-label"><b class="required-asterisk">*</b> Recipe Name...</label>
                                 <span class="helper-text insert-recipe-name-validation" data-error="wrong" data-success="right">*Please enter recipe name</span>
                             </div>
                         </div>
                         <div class="row recipe-description-input-row">
                             <div class="input-field col s12">
                                 <input id="create-recipe-listing" name="recipe_description" type="text" class="w-100 insert-recipe-description" required>
-                                <label for="create-recipe-listing-label">Recipe Description...</label>
+                                <label for="create-recipe-listing-label"><b class="required-asterisk">*</b> Recipe Description...</label>
                                 <span class="helper-text insert-recipe-description-validation" data-error="wrong" data-success="right">*Please enter recipe desciption</span>
                             </div>
                         </div>
                         <div class="row recipe-ingredients-input-row">
                             <div class="input-field col s12">
                                 <textarea id="create-recipe-listing" name="recipe_ingredients" type="text" class="w-100 materialize-textarea insert-recipe-ingredients" required></textarea>
-                                <label for="create-recipe-listing-label">Recipe Ingredients (Seperate each list item with a fullstop)...</label>
+                                <label for="create-recipe-listing-label"><b class="required-asterisk">*</b> Recipe Ingredients (Seperate each list item with a fullstop)...</label>
                                 <span class="helper-text insert-recipe-ingredients-validation" data-error="wrong" data-success="right">*Please enter recipe ingredients</span>
                             </div>
                         </div>
                         <div class="row recipe-instructions-input-row">
                             <div class="input-field col s12">
                                 <textarea id="create-recipe-listing" name="recipe_instructions" type="text" class="w-100 materialize-textarea insert-recipe-instructions" required></textarea>
-                                <label for="create-recipe-listing-label">Recipe Instructions (Seperate each list item with a fullstop)...</label>
+                                <label for="create-recipe-listing-label"><b class="required-asterisk">*</b> Recipe Instructions (Seperate each list item with a fullstop)...</label>
                                 <span class="helper-text insert-recipe-instructions-validation" data-error="wrong" data-success="right">*Please enter recipe instructions</span>
+                            </div>
+                        </div>
+                        <div class="row recipe-keywords-input-row">
+                            <div class="input-field col s12">
+                                <input id="create-recipe-listing" name="recipe_keywords" type="text" class="w-100 insert-recipe-keywords">
+                                <label for="create-recipe-listing-label">Recipe Keywords (Optional)...</label>
                             </div>
                         </div>
                         <div class="row recipe-image-url-row">
                             <div class="input-field col s12">
                                 <input id="create-recipe-listing" name="recipe_image_url" type="text" class="w-100 insert-recipe-image-url" required>
-                                <label for="create-recipe-listing-label">Recipe Image URL...</label>
+                                <label for="create-recipe-listing-label"><b class="required-asterisk">*</b> Recipe Image URL...</label>
                                 <span class="helper-text insert-recipe-image-url-validation" data-error="wrong" data-success="right">*Please enter recipe image url</span>
                             </div>
                         </div>

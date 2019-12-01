@@ -5,6 +5,16 @@ body {
     scroll-behavior: smooth;
 }
 
+body {
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.main-content {
+    min-height: 100%;
+    padding-bottom: 436px;
+}
 
 /* ---------- Main Nav Bar ----------*/
 
@@ -126,7 +136,8 @@ body {
 
 .main-image-container {
     background: url(../images/recipe-nest-main-image.png) fixed center center no-repeat;
-    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
 }
 
 .main-recipe-images-column {
@@ -223,9 +234,20 @@ main-recipe-images-column {
 
 /* ---------- Footer ----------*/
 
+.page-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 436px;
+}
+
 .footer-bottom {
     clear: both;
     text-align: center;
+}
+
+.footer-text {
+    height: 140px
 }
 
 .footer-links a {
@@ -291,6 +313,10 @@ main-recipe-images-column {
 
 /* ---------- Creating Recipe Form ----------*/
 
+.create-recipe-fields {
+    margin-bottom: 40px;
+}
+
 .creating-recipe-form {
     border: 1px solid grey;
     padding: 6vw !important;
@@ -299,12 +325,17 @@ main-recipe-images-column {
     box-shadow: 2px 2px 5px grey;
 }
 
+.required-asterisk {
+    color: red;
+}
+
 /* Validation */
 
 .insert-recipe-name-validation,
 .insert-recipe-ingredients-validation,
 .insert-recipe-description-validation,
 .insert-recipe-instructions-validation,
+.insert-recipe-keywords-validation,
 .insert-recipe-image-url-validation {
     display: none;
 }
@@ -313,6 +344,7 @@ main-recipe-images-column {
 .insert-recipe-ingredients-validation-flag,
 .insert-recipe-description-validation-flag,
 .insert-recipe-instructions-validation-flag,
+.insert-recipe-keywords-validation-flag
 .insert-recipe-image-url-validation-flag {
     display: block;
     color: red;
@@ -538,6 +570,22 @@ main-recipe-images-column {
 }
 
 
+/* ---------- Bread Crumb ----------*/
+
+.bread-crumb-navigator {
+    color: black;
+    font-weight: bold;
+}
+
+.bread-crumb-navigator::after {
+    content: " >";
+}
+
+.bread-crumb-navigator:hover {
+    text-decoration: underline;
+}
+
+
 /* ---------- Media Queries ----------*/
 
 @media only screen and (max-width: 315px) {
@@ -567,7 +615,7 @@ main-recipe-images-column {
     }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 993px) {
     section {
         width: 992px;
         margin: auto;
@@ -582,6 +630,13 @@ main-recipe-images-column {
     .title-container h1 {
         font-size: 3rem;
     }
+    .main-content {
+        padding-bottom: 311px;
+    }
+    .page-footer {
+        height: 311px;
+    }
+    
 }
 
 @media only screen and (min-width: 1050px) {

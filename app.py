@@ -70,6 +70,7 @@ def update_recipe(recipe_id):
         'recipe_description':request.form.get('recipe_description'),
         'recipe_ingredients': request.form.get('recipe_ingredients'),
         'recipe_instructions': request.form.get('recipe_instructions'),
+        'recipe_keywords': request.form.get('recipe_keywords'),
         'recipe_image_url':request.form.get('recipe_image_url')
     })
     return redirect(url_for('recipe_listing'))
@@ -87,6 +88,7 @@ def search():
             {'recipe_name': query},
             {'recipe_description': query},
             {'recipe_instructions': query},
+            {'recipe_keywords': query}
         ]
     })
     
