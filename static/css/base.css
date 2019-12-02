@@ -16,6 +16,10 @@ body {
     padding-bottom: 436px;
 }
 
+section {
+    background-color: white;
+}
+
 /* ---------- Main Nav Bar ----------*/
 
 .navbar-container {
@@ -87,6 +91,10 @@ body {
     align-items: center;
     height: 100vh;
     color: #fff;
+}
+
+.main-image-container {
+    background-color: #000 !important;
 }
 
 .main-heading-column {
@@ -395,6 +403,14 @@ main-recipe-images-column {
     color: #000;
 }
 
+.recipe-name-link {
+    color: #000;
+}
+
+.recipe-name-link:hover {
+    text-decoration: underline;
+}
+
 
 /* ---------- Recipe Cards ----------*/
 
@@ -641,7 +657,8 @@ main-recipe-images-column {
 
 @media only screen and (min-width: 1050px) {
     .main-image-container {
-        background-size: 160%;
+        background-size: 100%;
+        background-position: bottom;
     }
 }
 

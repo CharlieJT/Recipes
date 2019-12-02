@@ -58,7 +58,10 @@
                     </div>
                     <div class="card-content">
                         <div class='card-title-spacer'>
-                            <div class="card-title activator grey-text text-darken-4 recipe-name">{{recipe.recipe_name}}<i class="material-icons right more-info">more_vert</i></div>
+                            <a class="recipe-name-link" href="{{ url_for('recipe', recipe_id=recipe._id) }}">
+                                <div class="card-title activator grey-text text-darken-4 recipe-name">{{recipe.recipe_name}}
+                            </a>
+                            <i class="material-icons right more-info">more_vert</i></div>
                         </div>
                         <div class="button-container">
                             <a href="{{ url_for('recipe', recipe_id=recipe._id) }}">
