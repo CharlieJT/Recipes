@@ -12,7 +12,7 @@
 
 <!-- Most viewed Recipe Cards -->
 
-<div id="recipe-container-listing" class="container-fluid ">
+<div id="recipe-container-listing" class="container-fluid">
 
     <div class="row recipe-row">
         <!-- Breadcrumb -->
@@ -56,11 +56,16 @@
             <div class="card-surrounding">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
+                        <a class="recipe-name-link" href="{{ url_for('recipe', recipe_id=recipe._id) }}">
                         <img class="activator recipe-image" src="{{recipe.recipe_image_url}}">
+                        </a>
                     </div>
                     <div class="card-content">
                         <div class='card-title-spacer'>
-                            <div class="card-title activator grey-text text-darken-4 recipe-name">{{recipe.recipe_name}}<i class="material-icons right more-info">more_vert</i></div>
+                            <a class="recipe-name-link" href="{{ url_for('recipe', recipe_id=recipe._id) }}">
+                                <div class="card-title activator grey-text text-darken-4 recipe-name">{{recipe.recipe_name}}
+                            </a>
+                            <i class="material-icons right more-info">more_vert</i></div>
                         </div>
                         <div class="button-container">
                             <a href="{{ url_for('recipe', recipe_id=recipe._id) }}">
