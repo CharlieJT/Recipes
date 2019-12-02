@@ -601,6 +601,19 @@ main-recipe-images-column {
     text-decoration: underline;
 }
 
+/* ---------- Search ----------*/
+
+.sad-face-no-results {
+    width: 100px;
+}
+
+.no-results-column img {
+    display: flex;
+    margin: auto;
+}
+.no-results-column h4{
+    text-align: center;
+}
 
 /* ---------- Media Queries ----------*/
 

@@ -57,7 +57,7 @@
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
                         <a class="recipe-name-link" href="{{ url_for('recipe', recipe_id=recipe._id) }}">
-                        <img class="activator recipe-image" src="{{recipe.recipe_image_url}}">
+                            <img class="activator recipe-image" src="{{recipe.recipe_image_url}}">
                         </a>
                     </div>
                     <div class="card-content">
@@ -84,9 +84,13 @@
         {% endfor %} {% else %}
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="no-results-column col s12">
+                    <img class="sad-face-no-results" src="{{ url_for('static', filename='/images/sad-face.png') }}"></img>
+                </div>
+                <div class="no-results-column col s12">
                     <h4 class="text-center">No results have been found</h4>
                 </div>
+                
             </div>
         </div>
         {% endif %}
