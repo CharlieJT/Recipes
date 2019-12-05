@@ -52,9 +52,11 @@
             <div class="card-surrounding">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <a href="{{ url_for('recipe', recipe_id=recipe._id) }}">
-                            <img class="activator recipe-image" src="{{recipe.recipe_image_url}}">
-                        </a>
+                        <div class="card-image-surrounding">
+                            <a href="{{ url_for('recipe', recipe_id=recipe._id) }}">
+                                <img class="activator recipe-image" src="{{recipe.recipe_image_url}}">
+                            </a>
+                        </div>
                     </div>
                     <div class="card-content">
                         <div class='card-title-spacer'>

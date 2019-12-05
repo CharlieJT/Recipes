@@ -64,7 +64,7 @@
         <div class="col s12 m6 l4 card-container">
             <div class="card-surrounding">
                 <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
+                    <div id="main-card-image" class="card-image waves-effect waves-block waves-light">
                         <a class="recipe-name-link" href="{{ url_for('recipe', recipe_id=recipe._id) }}">
                             <img class="activator recipe-image" src="{{recipe.recipe_image_url}}" alt="recipes {{loop.index + 1}}">
                         </a>

@@ -20,5 +20,11 @@ mongo = PyMongo(app)
 app_module.mongo = mongo
 
 
+def test_recipes(self):
+    """Test recipe list page loading"""
+    res = self.client.get('/recipe-listing')
+    data = res.data.decode('utf-8')
+    assert res.status == '200 OK'
+    assert 'features' in data
 
 print("All tests passed")
