@@ -47,6 +47,7 @@
             </div>
             <div class="container create-recipe-fields">
                 <div class="row">
+                    <!-- Form for updating a recipe -->
                     <form action="{{ url_for('update_recipe', recipe_id=recipe._id) }}" method="POST" class="col s12 edit-recipe-form">
                         <div class="row recipe-name-input-row">
                             <div class="input-field col s12">
