@@ -541,7 +541,7 @@ main-recipe-images-column {
 }
 
 .edit-and-delete-buttons {
-    float: right;
+    float: unset;
 }
 
 .back-button span:nth-child(1) {
@@ -654,9 +654,9 @@ main-recipe-images-column {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 500px) {
     .edit-and-delete-buttons {
-        float: unset;
+        float: right;
         padding-left: 10px;
     }
 }
