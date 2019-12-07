@@ -554,11 +554,16 @@ main-recipe-images-column {
 /* ---------- Edit Recipe Form ----------*/
 
 .edit-recipe-form {
+    float: none;
     border: 1px solid grey;
     padding: 6vw !important;
     border-radius: 20px;
     -webkit-box-shadow: 2px 2px 5px grey;
     box-shadow: 2px 2px 5px grey;
+}
+
+.delete-recipe-button {
+    margin-top: 5px;
 }
 
 
@@ -636,9 +641,9 @@ main-recipe-images-column {
 
 /* ---------- Media Queries ----------*/
 
-@media only screen and (max-width: 315px) {
+@media only screen and (min-width: 315px) {
     .delete-recipe-button {
-        margin-top: 5px;
+        margin-top: 0;
     }
 }
 
@@ -651,7 +656,7 @@ main-recipe-images-column {
 
 @media only screen and (max-width: 500px) {
     .edit-and-delete-buttons {
-        float: none;
+        float: unset;
         padding-left: 10px;
     }
 }
