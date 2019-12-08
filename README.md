@@ -52,7 +52,7 @@ down the page when it's clicked.
 
 - All cards on the website have a clickable image, title & 'view recipe' button which will navigate the
 user to that particular recipe page. Should they want a quick look at the description of the recipe,
-ellipses (3 horizontal dots) have been put on each card as an indicator to view the description before
+ellipses (3 vertical dots) have been put on each card as an indicator to view the description before
 they click to view the whole recipe.
 
 - Bread crumbs have been included at the top of specific pages to help easily navigate back to pages
@@ -136,11 +136,15 @@ The design of the website was to give a clean & intuitive look & feel ensuring t
     indication that the user will have more information to scroll down to, this was animated specifically for
     it to look as if it is flicking down. When clicked, it will scroll the user down in a smooth fashion.
     
-    - **Up Chevron -** When a user scrolls 50 pixels down from the top of any page. An 'up' chevron will appear
+    - **Up Chevron -** When a user scrolls 50 pixels down from the top of any page, an 'up' chevron will appear
     in the bottom left-hand corner of the screen. When hovered over on desktop, it will rotate 360° &
     border & chevron colour will change to blue. When clicked on mobile & tablet, it will perform the animation
     as the page is scrolling back to the top. When clicked it will smooth scroll back to the top & the icon will
     disappear.
+    
+    - **Navbar shrinking -** When a user scrolls 50 pixels down from the top of any page, the user will notice that
+    the logo will shrink in size and the background of the navbar be sticky and have a dark background, this is to make sure
+    it doesn't take up too much space & so it can still be seen by the user.
     
     - **Active Pages -** When either the Home, List of Recipes or Create Page is active, depending on whichever it is,
     The navbar on desktop displays a white underline underneath the corrisponding page. On mobile, it colours the background
@@ -205,3 +209,123 @@ Every feature must react to it's intended purpose.
 - Must show clear & professional examples of HTML, CSS, JavaScript, jQuery & Python.
 
 - A great example project to put as part of a portfolio.
+
+
+## Features
+
+### Existing Features
+
+1. #### Home Page
+
+    <div align="center">
+        <img src="https://i.ibb.co/L9tFSwY/recipe-nest-home-page.png" width=400 href="https://listing-of-recipes.herokuapp.com" target="_blank" alt="Responsive displays of Recipe Nest" border="0">
+    </div>
+    <br>
+    - When you arrive at the page for the very first time, you will be presented with a dark recipe background,
+    an input search box in the centre of the screen where you can search for a recipe right from the get-go
+    & a logo in the top corner along with navigation in the opposite corner. 
+    
+    - A down chevron will be displayed underneath the search box as an indication for the user to scroll down. When clicked,
+    it will smooth scroll you down to the next section of the home page.
+    
+    - The navbar will also shrink when a user has scrolled down, this is to ensure that it doesn't take up too much space &
+    the background is darkened to ensure it can be seen at all times.
+    
+    - When you've scrolled down to the next section, you'll be presented with the top 3 viewed recipes on the website
+    which is dependant on how many times each particular recipe has been viewed on its specific recipe page.
+    
+    - With each most viewed recipe cards, you can click the ellipses (3 vertical dots) to see that particular description &
+    by clicking on the image, name or 'view recipe' button, it will navigate you to view the recipe.
+    
+    - The footer positioned at the bottom of the screen shows links to the Home, Recipe listing & Create recipe pages,
+    a brief description of the main purpose of the website, a link to the developers github repository & copyright text at the bottom.
+    
+    
+2. #### Recipe Listing Page 
+
+    - When you arrive at the recipe listing page, you will be presented with a breadcrumb which will navigate you back to the
+    homepage & will show you you're currently on the recipe listing page. You also have the option to search
+    for a particular recipe from there too. 
+    
+    - You are also presented with all of the recipes that are on the website with the option to click the ellipses (3 vertical dots)
+    to see that particular description & by clicking on the image, name or 'view recipe' button, it will navigate you to view the recipe.
+    
+3. #### Recipe Page 
+
+    - When you arrive at the recipe page, you are presented with the entire recipe, this will show the recipe name,
+    recipe image, recipe description, recipe ingredients & recipe instructions.
+    
+    - An edit button has been included in this page so you can navigate to edit the recipe if the user would like to add
+    additional information, adjust information or delete information.
+    
+    - A delete button has also been included so that the user has the option to delete the recipe, a modal will be presented
+    upon clicking the modal to ensure that the user is notified with the outcome of deleting a recipe before they perminantly
+    delete it.
+    
+    - List items of ingredients are shown of each ingredient.
+    
+    - A step by step guide of instruction will be shown.
+    
+    - You will be presented with a breadcrumb which will navigate you back to the homepage or back to the recipe listings page
+    and will show that you're currently on the recipe page.
+    
+4. #### Create Recipe Page 
+
+    - When you arrive at the create recipe page, you are presented with a form which will show the following fields.
+        - Recipe Name
+        - Recipe Description
+        - Recipe Ingredients
+        - Recipe Instructions
+        - Recipe Keywords
+        - Recipe Image URL
+        - Create Recipe 'button'
+    
+    - You will be presented with a breadcrumb which will navigate you back to the homepage & will show that
+    you're currently on the create recipe page.
+    
+    - Each field except for the 'Recipe Keywords' field is a required field and has a red asterisk next to each of them
+    to indicate that you 'must' fill that field. If not done & the user clicks submit, the user will be prompted to input
+    all of the required fields with red text under each of them.
+    
+5. #### Edit Recipe Page 
+
+    - When you arrive at the edit recipe page, you are presented with a form which will show the following fields
+    (these fields will have inputs with the original recipe that is going to be editing).
+        - Recipe Name
+        - Recipe Description
+        - Recipe Ingredients
+        - Recipe Instructions
+        - Recipe Keywords
+        - Recipe Image URL
+        - Create Recipe 'button'
+    
+    - You will be presented with a breadcrumb which will navigate you back to the homepage, back to the recipe listing,
+    back to the recipe & will show that you're currently on the create recipe page.
+    
+    - Each field except for the 'Recipe Keywords' field is a required field and has a red asterisk next to each of them
+    to indicate that you 'must' fill that field. If not done & the user clicks submit, the user will be prompted to input
+    all of the required fields with red text under each of them.
+
+6. #### Search Recipe Page
+
+    - When you have inputted something into any of the search fields throughout the website, you will
+    be taken to the search recipe page. Here, you will be presented with a title showing how many search items
+    have been found of whatever query was inputted into the search field.
+    
+    - You are then given the option to search for another item.
+    
+    - If no results have been found for your query, you will be notified with text informing you
+    that no results have been found with a sad face.
+    
+    - You will be presented with a breadcrumb which will navigate you back to the homepage or back to the recipe listings page
+    and will show that you're currently on the search page with the number of results found & the
+    query that has been inputted.
+
+7. #### Error 404 Page
+
+    - If at anytime the user has inputted a value in the URL that has not been found, a 404
+    page will be presented.
+    
+    - The page will show the user a message explaining that they've gotten lost & will have a button
+    which will lead them back to the home page.
+
