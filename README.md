@@ -83,4 +83,34 @@ at all times to ensure the user has an easy way around the website.
     - Good seperation between each instruction.
     - I have full control over all recipes on the website.
     
+### Design Ideas
 
+The design of the website was to give a clean & intuitive look & feel ensuring the user gets the best experience.
+
+- #### Fonts
+
+    - The font **'Open Sans'** was chosen as the primary font to ensure it had a profession look.
+
+- #### Colours
+
+    - **Main Heading and Footer -** A white font was selected for the heading to contrast nicely with the dark background
+    of the main image of the home page &  was also selected for the footer to contrast nice with the blue background.
+    
+    - **Cards -** A white background for each card was kept as a nice indicator of a 'card' & a box shadow was kept
+    to give a nice seperation between the background of the outer card & the inner card. This was contrasted nicely with
+    black text.
+    
+    - **To Top Arrow -** A white 'up' chevron was contrasted nicely with a darkened background & a white border
+    & when hovered over, the white chevron & border transformed to blue, this was to give a nice live look & feel to
+    the chevron.
+    
+    - **Edit & Delete Buttons -** An blue colour for the edit button was chosen to conform with the buttons of the website
+    & the delete button was styled with red to indicate a 'danger' or (be aware) feel. This was contrasted nicely with white text.
+    
+    
+    - **Forms -** A white background was chosen to conform to the website & a red asterisk was added to indicate that
+    the field 'must' be populated before submission. Also, red text was added to validation test when a user submitted
+    a form that had not been completed as it gave off a 'must' feel.
+    
+    - **Active Input fields -** When an input field is active, the test & bottom border transforms to blue, this
+    is to conform with the colours used on the website.
