@@ -75,7 +75,7 @@ delete their recipe permanently.
 - The player does not need to click a back button or to reload the page. Easy and informative buttons have been provided
 at all times to ensure the user has an easy way around the website.
 
-#### As a user, I'd like to see:
+- #### As a user, I'd like to see:
     - A professional and strong looking website to draw the user into using the website.
     - Navigations which are simple & informative which don't leave the user unsure of how to get to the page they want to get to.
     - Buttons which are simple but informative & give a good indication of their purpose.
@@ -106,7 +106,6 @@ The design of the website was to give a clean & intuitive look & feel ensuring t
     
     - **Edit & Delete Buttons -** An blue colour for the edit button was chosen to conform with the buttons of the website
     & the delete button was styled with red to indicate a 'danger' or (be aware) feel. This was contrasted nicely with white text.
-    
     
     - **Forms -** A white background was chosen to conform to the website & a red asterisk was added to indicate that
     the field 'must' be populated before submission. Also, red text was added to validation test when a user submitted
