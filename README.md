@@ -218,7 +218,7 @@ Every feature must react to it's intended purpose.
 1. #### Home Page
 
     <div align="center">
-        <img src="https://i.ibb.co/L9tFSwY/recipe-nest-home-page.png" width=400 href="https://listing-of-recipes.herokuapp.com" target="_blank" alt="Responsive displays of Recipe Nest" border="0">
+        <img src="https://i.ibb.co/L9tFSwY/recipe-nest-home-page.png" width=400 href="https://listing-of-recipes.herokuapp.com" target="_blank" alt="Responsive displays of Recipe Nest Home" border="0">
     </div>
     <br>
     - When you arrive at the page for the very first time, you will be presented with a dark recipe background,
@@ -241,8 +241,12 @@ Every feature must react to it's intended purpose.
     a brief description of the main purpose of the website, a link to the developers github repository & copyright text at the bottom.
     
     
-2. #### Recipe Listing Page 
+2. #### Recipe Listing Page
 
+    <div align="center">
+        <img src="https://i.ibb.co/QKf3CWB/recipe-nest-recipe-listing-page.png" width=400 href="https://listing-of-recipes.herokuapp.com/recipe_listing" target="_blank" alt="Responsive displays of Recipe Nest Recipe Listing" border="0">
+    </div>
+    <br>
     - When you arrive at the recipe listing page, you will be presented with a breadcrumb which will navigate you back to the
     homepage & will show you you're currently on the recipe listing page. You also have the option to search
     for a particular recipe from there too. 
@@ -252,6 +256,10 @@ Every feature must react to it's intended purpose.
     
 3. #### Recipe Page 
 
+    <div align="center">
+        <img src="https://i.ibb.co/NL4t2PD/recipe-nest-recipe-page.png" width=400 href="https://listing-of-recipes.herokuapp.com/recipe" target="_blank" alt="Responsive displays of Recipe Nest Recipe" border="0">
+    </div>
+    <br>
     - When you arrive at the recipe page, you are presented with the entire recipe, this will show the recipe name,
     recipe image, recipe description, recipe ingredients & recipe instructions.
     
@@ -271,6 +279,10 @@ Every feature must react to it's intended purpose.
     
 4. #### Create Recipe Page 
 
+    <div align="center">
+        <img src="https://i.ibb.co/x5vdYD6/recipe-nest-create-recipe-page.png" width=400 href="https://listing-of-recipes.herokuapp.com/create_recipe" target="_blank" alt="Responsive displays of Recipe Nest Create" border="0">
+    </div>
+    <br>
     - When you arrive at the create recipe page, you are presented with a form which will show the following fields.
         - Recipe Name
         - Recipe Description
@@ -287,8 +299,12 @@ Every feature must react to it's intended purpose.
     to indicate that you 'must' fill that field. If not done & the user clicks submit, the user will be prompted to input
     all of the required fields with red text under each of them.
     
-5. #### Edit Recipe Page 
+5. #### Edit Recipe Page
 
+    <div align="center">
+        <img src="https://i.ibb.co/m5qGmXr/recipe-nest-edit-recipe-page.png" width=400 href="https://listing-of-recipes.herokuapp.com/edit_recipe" target="_blank" alt="Responsive displays of Recipe Nest Edit" border="0">
+    </div>
+    <br>
     - When you arrive at the edit recipe page, you are presented with a form which will show the following fields
     (these fields will have inputs with the original recipe that is going to be editing).
         - Recipe Name
@@ -308,6 +324,10 @@ Every feature must react to it's intended purpose.
 
 6. #### Search Recipe Page
 
+    <div align="center">
+        <img src="https://i.ibb.co/cFkTbvL/recipe-nest-search-recipe-page.png" width=400 href="https://listing-of-recipes.herokuapp.com/search?query=burger&action=" target="_blank" alt="Responsive displays of Recipe Nest Search" border="0">
+    </div>
+    <br>
     - When you have inputted something into any of the search fields throughout the website, you will
     be taken to the search recipe page. Here, you will be presented with a title showing how many search items
     have been found of whatever query was inputted into the search field.
@@ -323,6 +343,10 @@ Every feature must react to it's intended purpose.
 
 7. #### Error 404 Page
 
+    <div align="center">
+        <img src="https://i.ibb.co/GkZBvy9/recipe-nest-404-error-page.png" width=400 href="https://listing-of-recipes.herokuapp.com/anything" target="_blank" alt="Responsive displays of Recipe Nest 404 Error" border="0">
+    </div>
+    <br>
     - If at anytime the user has inputted a value in the URL that has not been found, a 404
     page will be presented.
     
