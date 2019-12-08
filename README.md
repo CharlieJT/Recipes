@@ -13,7 +13,7 @@ allowing users to create their own recipes, make any amendments to recipes & giv
 to be able to delete their recipes. In addition to friendly colours, designs & animations, it makes a great
 recipe platform!
 
-<br>
+<br><br>
 [**View Recipe Nest website here!**](https://listing-of-recipes.herokuapp.com)
 
 </div>
