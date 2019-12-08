@@ -153,3 +153,12 @@ The design of the website was to give a clean & intuitive look & feel ensuring t
  
     - The main background of the website has been styled with a dark background with different ingredients. This is to contrast
     nicely with the white text on the navbar, the search bar & the main logo.
+
+### Developer and Business Purpose
+
+- Should be prepared for any double click, fast clicking or clicking different parts of the website.
+Every feature must react to it's intended purpose.
+
+- Must show clear & professional examples of HTML, CSS, JavaScript, jQuery & Python.
+
+- A great example project to put as part of a portfolio.
