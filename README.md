@@ -171,7 +171,7 @@ Wireframes were made using [Balsamiq](https://balsamiq.com/) for a clean looking
     - [Search Recipe Page - Desktop Display](static/images/wireframes/desktop-wireframes/recipe-nest-search-page-1.png)
     - [404 Error Page - Desktop Display](static/images/wireframes/desktop-wireframes/recipe-nest-404-error-page-1.png)
 
-- #### Mobile Wireframes
+- #### Tablet Wireframes
 
     - [Home Page 1 - Tablet Display](static/images/wireframes/tablet-wireframes/recipe-nest-home-page-1.png)
     - [Home Page 2 - Tablet Display](static/images/wireframes/tablet-wireframes/recipe-nest-home-page-2.png)
