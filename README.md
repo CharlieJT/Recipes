@@ -170,6 +170,19 @@ Wireframes were made using [Balsamiq](https://balsamiq.com/) for a clean looking
     - [Edit Recipe Page - Desktop Display](static/images/wireframes/desktop-wireframes/recipe-nest-edit-recipe-page-1.png)
     - [Search Recipe Page - Desktop Display](static/images/wireframes/desktop-wireframes/recipe-nest-search-page-1.png)
     - [404 Error Page - Desktop Display](static/images/wireframes/desktop-wireframes/recipe-nest-404-error-page-1.png)
+
+- #### Mobile Wireframes
+
+    - [Home Page 1 - Tablet Display](static/images/wireframes/tablet-wireframes/recipe-nest-home-page-1.png)
+    - [Home Page 2 - Tablet Display](static/images/wireframes/tablet-wireframes/recipe-nest-home-page-2.png)
+    - [Home Page 3 - Tablet Display](static/images/wireframes/tablet-wireframes/recipe-nest-home-page-3.png)
+    - [Recipe Listing Page 1 - Tablet Display](static/images/wireframes/tablet-wireframes/recipe-nest-recipe-listing-page-1.png)
+    - [Recipe Page - Tablet Display](static/images/wireframes/tablet-wireframes/recipe-nest-recipe-page-1.png)
+    - [Create Recipe Page - Tablet Display](static/images/wireframes/tablet-wireframes/recipe-nest-create-recipe-page-1.png)
+    - [Edit Recipe Page - Tablet Display](static/images/wireframes/tablet-wireframes/recipe-nest-edit-recipe-page-1.png)
+    - [Search Recipe Page - Tablet Display](static/images/wireframes/tablet-wireframes/recipe-nest-search-page-1.png)
+    - [404 Error Page - Tablet Display](static/images/wireframes/tablet-wireframes/recipe-nest-404-error-page-1.png)
+ 
  
 - #### Mobile Wireframes
 
