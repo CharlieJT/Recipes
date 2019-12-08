@@ -223,6 +223,7 @@ Every feature must react to it's intended purpose.
         <img src="https://i.ibb.co/L9tFSwY/recipe-nest-home-page.png" width=400 href="https://listing-of-recipes.herokuapp.com" target="_blank" alt="Responsive displays of Recipe Nest Home" border="0">
     </div>
     <br>
+    
     - When you arrive at the page for the very first time, you will be presented with a dark recipe background,
     an input search box in the centre of the screen where you can search for a recipe right from the get-go
     & a logo in the top corner along with navigation in the opposite corner. 
