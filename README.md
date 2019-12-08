@@ -320,7 +320,7 @@ Every feature must react to it's intended purpose.
         - Recipe Instructions
         - Recipe Keywords
         - Recipe Image URL
-        - Create Recipe 'button'
+        - Update Recipe 'button'
     
     - You will be presented with a breadcrumb which will navigate you back to the homepage, back to the recipe listing,
     back to the recipe & will show that you're currently on the create recipe page.
