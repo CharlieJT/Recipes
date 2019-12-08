@@ -153,6 +153,15 @@ The design of the website was to give a clean & intuitive look & feel ensuring t
  
     - The main background of the website has been styled with a dark background with different ingredients. This is to contrast
     nicely with the white text on the navbar, the search bar & the main logo.
+    
+### Wireframes
+
+Wireframes were made using [Balsamiq](https://balsamiq.com/) for a clean looking design layout.
+
+- #### Desktop Wireframes
+
+    - [Main - Desktop Display](static/images/wireframes/desktop-wireframes/recipe-nest-search-page-1.png)
+ 
 
 ### Developer and Business Purpose
 
