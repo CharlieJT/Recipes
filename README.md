@@ -33,6 +33,6 @@ recipe platform!
 
 ### Project Purpose
 
-The goal of Recipe Nest is give users full access & control over all recipes. This
+The goal of Recipe Nest is to give users full access & control over all recipes. This
 means they are able to create recipes, view all recipes, update any recipe & delete any recipe.
 
