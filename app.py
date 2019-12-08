@@ -107,13 +107,13 @@ def delete_recipe(recipe_id):
     
     
 @app.errorhandler(404)
-def handle_404(unfound):
-    return render_template('error404.html', title="Error 404", unfound=unfound)
+def handle_404(not_found):
+    return render_template('error404.html', title="Error 404", not_found=not_found)
     
   
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
     port=int(os.environ.get('PORT')),
-    debug=False)
+    debug=True)
 
 
