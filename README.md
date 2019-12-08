@@ -27,7 +27,8 @@ recipe platform!
     - [**Design Ideas**](#design-ideas)
     - [**Wireframes**](#wireframes)
     - [**Developer and Business Purpose**](#developer-and-business-purpose)
-
+2. [**Features**](#features)
+    - [**Existing Features**](#existing-features)
 
 ## UX
 
