@@ -75,6 +75,8 @@ delete their recipe permanently.
 - The player does not need to click a back button or to reload the page. Easy and informative buttons have been provided
 at all times to ensure the user has an easy way around the website.
 
+### Design Ideas
+
 - #### As a user, I'd like to see:
     - A professional and strong looking website to draw the user into using the website.
     - Navigations which are simple & informative which don't leave the user unsure of how to get to the page they want to get to.
