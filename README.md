@@ -173,15 +173,15 @@ Wireframes were made using [Balsamiq](https://balsamiq.com/) for a clean looking
  
 - #### Mobile Wireframes
 
-    - [Home Page 1 - Mobile Display](static/images/wireframes/desktop-wireframes/recipe-nest-home-page-1.png)
-    - [Home Page 2 - Mobile Display](static/images/wireframes/desktop-wireframes/recipe-nest-home-page-2.png)
-    - [Home Page 3 - Mobile Display](static/images/wireframes/desktop-wireframes/recipe-nest-home-page-3.png)
-    - [Recipe Listing Page 1 - Mobile Display](static/images/wireframes/desktop-wireframes/recipe-nest-recipe-listing-page-1.png)
-    - [Recipe Page - Mobile Display](static/images/wireframes/desktop-wireframes/recipe-nest-recipe-page-1.png)
-    - [Create Recipe Page - Mobile Display](static/images/wireframes/desktop-wireframes/recipe-nest-create-recipe-page-1.png)
-    - [Edit Recipe Page - Mobile Display](static/images/wireframes/desktop-wireframes/recipe-nest-edit-recipe-page-1.png)
-    - [Search Recipe Page - Mobile Display](static/images/wireframes/desktop-wireframes/recipe-nest-search-page-1.png)
-    - [404 Error Page - Mobile Display](static/images/wireframes/desktop-wireframes/recipe-nest-404-error-page-1.png)
+    - [Home Page 1 - Mobile Display](static/images/wireframes/mobile-wireframes/recipe-nest-home-page-1.png)
+    - [Home Page 2 - Mobile Display](static/images/wireframes/mobile-wireframes/recipe-nest-home-page-2.png)
+    - [Home Page 3 - Mobile Display](static/images/wireframes/mobile-wireframes/recipe-nest-home-page-3.png)
+    - [Recipe Listing Page 1 - Mobile Display](static/images/wireframes/mobile-wireframes/recipe-nest-recipe-listing-page-1.png)
+    - [Recipe Page - Mobile Display](static/images/wireframes/mobile-wireframes/recipe-nest-recipe-page-1.png)
+    - [Create Recipe Page - Mobile Display](static/images/wireframes/mobile-wireframes/recipe-nest-create-recipe-page-1.png)
+    - [Edit Recipe Page - Mobile Display](static/images/wireframes/mobile-wireframes/recipe-nest-edit-recipe-page-1.png)
+    - [Search Recipe Page - Mobile Display](static/images/wireframes/mobile-wireframes/recipe-nest-search-page-1.png)
+    - [404 Error Page - Mobile Display](static/images/wireframes/mobile-wireframes/recipe-nest-404-error-page-1.png)
  
 
 ### Developer and Business Purpose
