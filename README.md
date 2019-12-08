@@ -82,7 +82,7 @@ at all times to ensure the user has an easy way around the website.
     - Navigations which are simple & informative which don't leave the user unsure of how to get to the page they want to get to.
     - Buttons which are simple but informative & give a good indication of their purpose.
     - Subtle animations to not overcomplicate the website, but to give a strong professional look & feel.
-    - Good seperation between each instruction.
+    - Good separation between each instruction.
     - I have full control over all recipes on the website.
     
 ### Design Ideas
@@ -91,15 +91,15 @@ The design of the website was to give a clean & intuitive look & feel ensuring t
 
 - #### Fonts
 
-    - The font **'Open Sans'** was chosen as the primary font to ensure it had a profession look.
+    - The font **'Open Sans'** was chosen as the primary font to ensure it had a professional look.
 
 - #### Colours
 
     - **Main Heading and Footer -** A white font was selected for the heading to contrast nicely with the dark background
-    of the main image of the home page &  was also selected for the footer to contrast nice with the blue background.
+    of the main image of the home page &  was also selected for the footer to contrast nicely with the blue background.
     
-    - **Cards -** A white background for each card was kept as a nice indicator of a 'card' & a box shadow was kept
-    to give a nice seperation between the background of the outer card & the inner card. This was contrasted nicely with
+    - **Cards -** A white background for each card was kept as a nice indicator of a 'card' & a box-shadow was kept
+    to give a nice separation between the background of the outer card & the inner card. This was contrasted nicely with
     black text.
     
     - **To Top Arrow -** A white 'up' chevron was contrasted nicely with a darkened background & a white border
@@ -115,3 +115,41 @@ The design of the website was to give a clean & intuitive look & feel ensuring t
     
     - **Active Input fields -** When an input field is active, the test & bottom border transforms to blue, this
     is to conform with the colours used on the website.
+    
+    
+- #### Styling
+
+    Styles have been made to give a professional, strong look. With the help of the CSS framework
+    [Materialize!](https://materializecss.com/), I was able to implement a nice looking & well animated
+    website without going over the top.
+    
+    **Special styles include:**
+    
+    - **Input fields -** Input fields were produced with the help of materialize to give a nice
+    subtle animation when the user clicks on a field, the placeholder will bounce to the top of the field,
+    change the bottom border & text to blue & allow the user to input text.
+    
+    - **Buttons & images** With the help of materialize, when all buttons or images on cards are clicked,
+    a nice waves effect is triggered giving it a nice subtle animation.
+    
+    - **Down chevron** A downwards chevron was included underneath the homepage search bar to give an
+    indication that the user will have more information to scroll down to, this was animated specifically for
+    it to look as if it is flicking down. When clicked, it will scroll the user down in a smooth fashion.
+    
+    - **Up Chevron -** When a user scrolls 50 pixels down from the top of any page. An 'up' chevron will appear
+    in the bottom left-hand corner of the screen. When hovered over on desktop, it will rotate 360° &
+    border & chevron colour will change to blue. When clicked on mobile & tablet, it will perform the animation
+    as the page is scrolling back to the top. When clicked it will smooth scroll back to the top & the icon will
+    disappear.
+    
+    - **Active Pages -** When either the Home, List of Recipes or Create Page is active, depending on whichever it is,
+    The navbar on desktop displays a white underline underneath the corrisponding page. On mobile, it colours the background
+    of the corresponding page to grey & in the footer, the corresponding text will be grey, which will only work if
+    one of those pages is active.
+    
+- #### Main background
+
+    The main background image has been requested by the developer and been granted permission to use them for educational purposes.
+ 
+    - The main background of the website has been styled with a dark background with different ingredients. This is to contrast
+    nicely with the white text on the navbar, the search bar & the main logo.
