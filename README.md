@@ -32,6 +32,8 @@ recipe platform!
     - [**Existing Features**](#existing-features)
     - [**Features Left to Implement**](#features-left-to-implement)
 
+3. [**Technologies Used**](#technologies-used)
+
 ## UX
 
 ### Project Purpose
@@ -375,3 +377,24 @@ Every feature must react to it's intended purpose.
     - A logging in feature should be implemented so that you can have control over your own recipes
     & only your own. This will prevent people being able to tamper or delete your recipes.
     
+## Technologies Used
+
+- This project uses HTML, CSS, JavaScript, Python, Flask, Mongo DB and various different technologies to work as helpers to the languages.
+- #### [Cloud9](https://c9.io)
+    - **Cloud9** is an IDE used to develop the website.
+- #### [MongoDB](https://www.mongodb.com/)
+    - **MongoDB** short for (Humongous database) is a database platform used to store all of the
+    data for each recipe that is used on the website.
+- #### [Materialize](https://materializecss.com/)
+    - **Materialize** is s modern responsive front-end framework based on Material Design
+    -  It's used to create professional looking cards, search boxes & overall style of the website.
+    - It also allows for responsive design of the website. 
+- #### [JQuery](https://jquery.com)
+    - **JQuery** has been used to simplify DOM manipulation.
+- #### [GitHub](https://github.com/)
+    - **Github** is used: 
+    1. As a remote backup of code used in the project.
+    2. As a remote server for another user to see the code used in the project.
+    3. For users to view the deployed version of the website. The deployed version can be viewed [here!](https://listing-of-recipes.herokuapp.com).
+- #### [AutoPrefixer](https://autoprefixer.github.io/)
+    - **AutoPrefixer** is used to ensure all css prefixes are running with the most up to date versions.
