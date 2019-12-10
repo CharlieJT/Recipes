@@ -30,6 +30,7 @@ recipe platform!
 
 2. [**Features**](#features)
     - [**Existing Features**](#existing-features)
+    - [**Features Left to Implement**](#features-left-to-implement)
 
 ## UX
 
@@ -138,7 +139,7 @@ The design of the website was to give a clean & intuitive look & feel ensuring t
     indication that the user will have more information to scroll down to, this was animated specifically for
     it to look as if it is flicking down. When clicked, it will scroll the user down in a smooth fashion.
     
-    - **Up Chevron -** When a user scrolls 50 pixels down from the top of any page, an 'up' chevron will appear
+    - **Up chevron -** When a user scrolls 50 pixels down from the top of any page, an 'up' chevron will appear
     in the bottom left-hand corner of the screen. When hovered over on desktop, it will rotate 360° &
     border & chevron colour will change to blue. When clicked on mobile & tablet, it will perform the animation
     as the page is scrolling back to the top. When clicked it will smooth scroll back to the top & the icon will
@@ -148,7 +149,7 @@ The design of the website was to give a clean & intuitive look & feel ensuring t
     the logo will shrink in size and the background of the navbar be sticky and have a dark background, this is to make sure
     it doesn't take up too much space & so it can still be seen by the user.
     
-    - **Active Pages -** When either the Home, List of Recipes or Create Page is active, depending on whichever it is,
+    - **Active pages -** When either the Home, List of Recipes or Create Page is active, depending on whichever it is,
     The navbar on desktop displays a white underline underneath the corrisponding page. On mobile, it colours the background
     of the corresponding page to grey & in the footer, the corresponding text will be grey, which will only work if
     one of those pages is active.
@@ -272,7 +273,7 @@ Every feature must react to it's intended purpose.
     additional information, adjust information or delete information.
     
     - A delete button has also been included so that the user has the option to delete the recipe, a modal will be presented
-    upon clicking the modal to ensure that the user is notified with the outcome of deleting a recipe before they perminantly
+    upon clicking the modal to ensure that the user is notified with the outcome of deleting a recipe before they permanantly
     delete it.
     
     - List items of ingredients are shown of each ingredient.
@@ -362,3 +363,15 @@ Every feature must react to it's intended purpose.
     - The page will show the user a message explaining that they've gotten lost & will have a button
     which will lead them back to the home page.
 
+### Features Left to Implement
+
+1. #### Pagination
+
+    - Pagination on recipe listing page & search page. This will help with keeping everything
+    more organised & help with loading time.
+
+2. #### Logging in
+
+    - A logging in feature should be implemented so that you can have control over your own recipes
+    & only your own. This will prevent people being able to tamper or delete your recipes.
+    
