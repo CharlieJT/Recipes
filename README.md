@@ -379,7 +379,7 @@ Every feature must react to it's intended purpose.
     
 ## Technologies Used
 
-- This project uses HTML, CSS, JavaScript, Python, Flask, Mongo DB and various different technologies to work as helpers to the languages.
+- This project uses HTML, CSS, JavaScript, Python, Flask, MongoDB and various different technologies to work as helpers to the languages.
 - #### [Cloud9](https://c9.io)
     - **Cloud9** is an IDE used to develop the website.
 - #### [MongoDB](https://www.mongodb.com/)
@@ -394,7 +394,8 @@ Every feature must react to it's intended purpose.
 - #### [GitHub](https://github.com/)
     - **Github** is used: 
     1. As a remote backup of code used in the project.
-    2. As a remote server for another user to see the code used in the project.
-    3. For users to view the deployed version of the website. The deployed version can be viewed [here!](https://listing-of-recipes.herokuapp.com).
 - #### [AutoPrefixer](https://autoprefixer.github.io/)
     - **AutoPrefixer** is used to ensure all css prefixes are running with the most up to date versions.
+- #### [Heroku](https://www.heroku.com)
+    - **Heroku** is used as a platform for the project to be deployed to.
+    - For users to view the deployed version of the website. The deployed version can be viewed [here!](https://listing-of-recipes.herokuapp.com).
