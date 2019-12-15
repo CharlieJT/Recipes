@@ -151,7 +151,7 @@ The design of the website was to give a clean & intuitive look & feel ensuring t
     in the bottom left-hand corner of the screen. When hovered over on desktop, it will rotate 360° &
     border & chevron colour will change to blue. When clicked on mobile & tablet, it will perform the animation
     as the page is scrolling back to the top. When clicked it will smooth scroll back to the top & the icon will
-    disappear.
+    disappear. The logic behind it can be found [here!](https://freefrontend.com/css-arrows/).
     
     - **Navbar shrinking -** When a user scrolls 50 pixels down from the top of any page, the user will notice that
     the logo will shrink in size and the background of the navbar be sticky and have a dark background, this is to make sure
@@ -443,4 +443,66 @@ partilcar recipe is used on the website with the corresponding ID.
 ## Testing
 
 A full testing process can be found in a separate [tests.md](tests.md) file.
+
+## Deployment
+
+### To run of your local IDE
+
+The project was built using [Cloud9](https://c9.io), through a built-in function called 'Git', I could commit
+
+- You must ensure that the following are installed on your machine before you can work with it in your IDE.
+    - [PIP](https://pip.pypa.io/en/stable/installing/)
+    - [Python 3](https://www.python.org/downloads/)
+    - [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
+    - You must have an account in [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) or have it running locally
+    on your machine (You can find instructions of setting it up [here](https://docs.atlas.mongodb.com/).
+
+#### Instructions
+1. Go to https://github.com/CharlieJT/Recipes and click the 'Clone or download' button and then click 'Download ZIP'
+& extract to a folder of your choice. Ensuring you have Git installed on your system, you can clone the project into
+your IDE through running the following command in the terminal
+```console
+git clone https://github.com/*username*/*repository*
+```
+
+2. Ensure you have open a terminal (Some IDE's such as Cloud9 & VSCode have a built in terminal but if not, you may need
+3. to open one up on your desktop), cd to the correct location to where you have your ZIP file.
+4. if running in Cloud9, you won't need to do this step as it comes with a built in virtual environment but if it doesn't,
+you need to run the following command to build a virtual environment:
+```
+python -m .venv venv
+```  
+_Your Python can vary, i.e. python3, py._
+
+5. If your IDE requires a virtual environment, run the following command to activate it:
+```
+.venv\Scripts\activate 
+```
+_This may vary so be sure to check the [Python Documentation on virtual environments](https://docs.python.org/3/library/venv.html) to make sure you're sure._
+
+6. Install a requirements.txt file with of the correct packages that you need for the project with: 
+```
+pip -r requirements.txt
+```
+_Check to ensure that you have all of the required packages you need for the project._
+
+7.  Should you need to the latest version of pip, you can get it by running the following command.
+```
+pip install --upgrade pip
+```
+
+8. Go into your .flaskenv file & create a MONGO_URI which is a link to your database in MongoDB it should look something like this
+
+```
+mongodb+srv://<username>:<password in mongo db>@<cluster_name>-qtxun.mongodb.net/<database name>?retryWrites=true&w=majority
+```
+
+9. With the following command, run your app.py file using the following command
+
+```
+python3 app.py
+```
+
+10. Then click on `http://127.0.0.1:5000` which will display in the termimal to view the project.
+
 
