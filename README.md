@@ -41,7 +41,7 @@ recipe platform!
 5. [**Testing**](#testing)
 
 6. [**Deployement**](#deployment)
-    - [**To run of your local IDE**](#to-run-on-your-local-ide)
+    - [**To run on your local IDE**](#to-run-on-your-local-ide)
     - [**Deploy to Heroku**](#deploy-to-heroku)
 
 7. [**Credits**](#credits)
@@ -453,7 +453,7 @@ A full testing process can be found in a separate [tests.md](tests.md) file.
 
 ## Deployment
 
-### To run of your local IDE
+### To run on your local IDE
 
 The project was built using [Cloud9](https://c9.io), through a built-in function called 'Git', I could commit
 
