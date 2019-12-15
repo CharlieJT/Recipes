@@ -46,6 +46,7 @@ recipe platform!
 
 7. [**Credits**](#credits)
     - [**Contents**](#contents)
+    - [**Media**](#media)
 
 ## UX
 
@@ -532,7 +533,7 @@ python3 app.py
 2. You need to add a requirements.txt file by using the command `sudo pip3 freeze —local > requirements.txt`
 which will add all of the package that you need to use for the project.
 
-3. Use `git add .` to stage all of your files `git commit -m ""<message here>` to commit the changes ready to push to github
+3. Use `git add .` to stage all of your files `git commit -m "<message here>"` to commit the changes ready to push to github
 
 4. You must then create a repository in github & follow the instructions in order to push your work up to github.
 
@@ -572,4 +573,11 @@ this should be done in the terminal.
 
 - All Content has been thought of and written by the Developer. 
 
+
+### Media
+
+- #### Images
+    - The Main background image for the website was found [here](https://www.pinterest.nz/pin/346566133817029961/)
+    - The Recipe Nest logo was created [here](https://www.brandcrowd.com/maker/tag/name)
+    - The Favicon was create [here](ttps://favicon.io/favicon-converter/)
 
