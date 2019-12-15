@@ -47,6 +47,10 @@ recipe platform!
 7. [**Credits**](#credits)
     - [**Contents**](#contents)
     - [**Media**](#media)
+    - [**Help with code**](#help-with-code)
+    - [**Acknowledgements**](#acknowledgements)
+
+8. [**Disclaimer**](#disclaimer)
 
 ## UX
 
@@ -581,3 +585,28 @@ this should be done in the terminal.
     - The Recipe Nest logo was created [here](https://www.brandcrowd.com/maker/tag/name)
     - The Favicon was create [here](ttps://favicon.io/favicon-converter/)
 
+### Help with code
+
+- Ideas on how to write out the code for the Up Arrow: [Up Arrow](https://freefrontend.com/css-arrows).
+- Ideas on how to apply the functionality for an action taking place when scrolled down from top:
+[How TO - Scroll Back To Top Button](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp).
+- Ideas on how to add a sticky footer, ensuring it will stay at the bottom of the page at all times:
+[Sticky Footer, Five Ways](https://css-tricks.com/couple-takes-sticky-footer/)
+    
+The code learned from the snippet was not copied into the project, they were used as help and guidance to be interpreted in a different and unique way.
+
+### Acknowledgements
+
+A huge thank you to:
+
+- Spencer Barriball (spence_mentor) - For helping me with planning & preperation as well as providing me with
+useful tips & tricks to use in my project, also helping me with issues along the way.
+
+- Martin (Code Institute) - For hepling me with a requirement.txt file that wasn't allowing me to deploy my project properly
+to Heroku.
+
+- Tim (Code Institute) - For a minor fix with an image file path which would not allow me to view my images with jinja in heroku. 
+
+## Disclaimer
+
+All content on the website, including images, are used for educational purposes only.
