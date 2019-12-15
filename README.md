@@ -551,8 +551,10 @@ They should all read as follows:
 | Key | Value |
 --- | ---
 IP | 0.0.0.0 
-MONGO_URI | mongodb+srv://<username>:<password in mongo db>@<cluster_name>-qtxun.mongodb.net/<database name>?retryWrites=true&w=majority
+MONGO_ URI | mongodb+srv://<username>:<password in mongo db>@<cluster_name>-qtxun.mongodb.net/<database name>?retryWrites=true&w=majority
 PORT | 5000
+
+_Close space in MONGO URI ^_
 
 then click add after each one to insert.
 
