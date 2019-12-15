@@ -38,6 +38,8 @@ recipe platform!
 
 4. [**Technologies Used**](#technologies-used)
 
+5. [**Testing**](#testing)
+
 ## UX
 
 ### Project Purpose
@@ -437,3 +439,8 @@ partilcar recipe is used on the website with the corresponding ID.
 - #### [Heroku](https://www.heroku.com)
     - **Heroku** is used as a platform for the project to be deployed to.
     - For users to view the deployed version of the website. The deployed version can be viewed [here!](https://listing-of-recipes.herokuapp.com).
+
+## Testing
+
+A full testing process can be found in a separate [tests.md](tests.md) file.
+
