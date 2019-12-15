@@ -44,6 +44,9 @@ recipe platform!
     - [**To run of your local IDE**](#to-run-on-your-local-ide)
     - [**Deploy to Heroku**](#deploy-to-heroku)
 
+7. [**Credits**](#credits)
+    - [**Contents**](#contents)
+
 ## UX
 
 ### Project Purpose
@@ -562,4 +565,11 @@ this should be done in the terminal.
 
 11. After these step are done correctly, you can scroll to the very top of the page in Heroku & click
 "Open App". You will now be able to view the project in Heroku.
+
+## Credits
+
+### Contents
+
+- All Content has been thought of and written by the Developer. 
+
 
