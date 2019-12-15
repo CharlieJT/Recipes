@@ -40,6 +40,10 @@ recipe platform!
 
 5. [**Testing**](#testing)
 
+6. [**Deployement**](#deployment)
+    - [**To run of your local IDE**](#to-run-on-your-local-ide)
+    - [**Deploy to Heroku**](#deploy-to-heroku)
+
 ## UX
 
 ### Project Purpose
@@ -472,37 +476,89 @@ you need to run the following command to build a virtual environment:
 ```
 python -m .venv venv
 ```  
+
+5. Use the following command to run a DNS toolkit for Python
+```
+sudo pip3 install dnspython
+```
+
+6. Use the following command to allow your project to run along side mongodb in python
+```
+sudo pip3 install pymongo
+```
+
 _Your Python can vary, i.e. python3, py._
 
-5. If your IDE requires a virtual environment, run the following command to activate it:
+7. If your IDE requires a virtual environment, run the following command to activate it:
 ```
 .venv\Scripts\activate 
 ```
 _This may vary so be sure to check the [Python Documentation on virtual environments](https://docs.python.org/3/library/venv.html) to make sure you're sure._
 
-6. Install a requirements.txt file with of the correct packages that you need for the project with: 
+8. Install a requirements.txt file with of the correct packages that you need for the project with: 
 ```
 pip -r requirements.txt
 ```
 _Check to ensure that you have all of the required packages you need for the project._
 
-7.  Should you need to the latest version of pip, you can get it by running the following command.
+9.  Should you need to the latest version of pip, you can get it by running the following command.
 ```
 pip install --upgrade pip
 ```
 
-8. Go into your .flaskenv file & create a MONGO_URI which is a link to your database in MongoDB it should look something like this
+10. Go into your .flaskenv file & create a MONGO_URI which is a link to your database in MongoDB it should look something like this
 
 ```
 mongodb+srv://<username>:<password in mongo db>@<cluster_name>-qtxun.mongodb.net/<database name>?retryWrites=true&w=majority
 ```
 
-9. With the following command, run your app.py file using the following command
+11. With the following command, run your app.py file using the following command
 
 ```
 python3 app.py
 ```
 
-10. Then click on `http://127.0.0.1:5000` which will display in the termimal to view the project.
+12. Then click on `http://127.0.0.1:5000` which will display in the termimal to view the project.
 
+### Deploy to Heroku
+
+- The following steps to deploy to Heroku in the terminal
+
+1. You need to run the command `echo web: python app.py > Procfile` which will create a Procfile.
+
+2. You need to add a requirements.txt file by using the command `sudo pip3 freeze —local > requirements.txt`
+which will add all of the package that you need to use for the project.
+
+3. Use `git add .` to stage all of your files `git commit -m ""<message here>` to commit the changes ready to push to github
+
+4. You must then create a repository in github & follow the instructions in order to push your work up to github.
+
+5. Using `git push` & inputting your email & password when instructed, this will push all of the files
+that have been committed up to github.
+_Note that the password field will not change when you are inserting text_
+
+6. Go to heroku [here](https://dashboard.heroku.com/) & ensure you are signed up.
+
+7. Go to your Heroku dashboard & click "New" & click "Create New App".
+
+8. Give any name you like & set the region to "Europe".
+
+9. Ensure you link the heroku application to the correct Github repository.
+
+9. Click inside of your app that you've just created and go to "Settings" then to "Reveal Config Vars".
+They should all read as follows:
+
+| Key | Value |
+--- | ---
+IP | 0.0.0.0 
+MONGO_URI | mongodb+srv://<username>:<password in mongo db>@<cluster_name>-qtxun.mongodb.net/<database name>?retryWrites=true&w=majority
+PORT | 5000
+
+then click add after each one to insert.
+
+10. Go back to the top & go to "Deploy" and scroll down to the list of instructions given to deploy your project to heroku,
+this should be done in the terminal.
+
+11. After these step are done correctly, you can scroll to the very top of the page in Heroku & click
+"Open App". You will now be able to view the project in Heroku.
 
