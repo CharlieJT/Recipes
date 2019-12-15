@@ -377,6 +377,40 @@ Every feature must react to it's intended purpose.
     - A logging in feature should be implemented so that you can have control over your own recipes
     & only your own. This will prevent people being able to tamper or delete your recipes.
     
+## Database
+
+### MongoDB
+
+- The database used for this project was a NoSQL database called MongoDB which is a requirement
+for this particular project & to gain experience using a NoSQL database.
+
+### Data types
+
+- For this project, the types of data that are used are:
+    - ObjectId
+    - String
+    - Int32(Integer)
+    
+### Recipes Database
+
+- A database was created called 'myRecipes' which contains a collection called recipes which is where
+- each piece of data for each recipe is stored. The data structure are as follows:
+
+| Name of field | field key | field value | type |
+--- | --- | --- | --- 
+Recipe ID | _id | `<Creates ID automatically>`  | ObjectId 
+Recipe Name | recipe_name | `<Name of your Recipe>` | string
+Recipe Description | recipe_description | `<Describe your recipe in a paragraph>` | string
+Recipe Ingredients | recipe_ingredients | `<Each ingredient in recipe>` | string
+Recipe Instructions | recipe_instructions | `<Each instruction in recipe>` | string
+Recipe Image URL | recipe_image_url | `<Full image path of recipe>` | string
+Amount of views | views | `<Amount of viewings of recipe>` | int32
+
+#### Views
+
+- A view will begin at 1 when the recipe has been created & will then increment by 1 everytime that a
+partilcar recipe is used on the website with the corresponding ID.
+
 ## Technologies Used
 
 - This project uses HTML, CSS, JavaScript, Python, Flask, MongoDB and various different technologies to work as helpers to the languages.
