@@ -545,16 +545,15 @@ _Note that the password field will not change when you are inserting text_
 
 9. Ensure you link the heroku application to the correct Github repository.
 
-9. Click inside of your app that you've just created and go to "Settings" then to "Reveal Config Vars".
+10. Click inside of your app that you've just created and go to "Settings" then to "Reveal Config Vars".
 They should all read as follows:
 
 | Key | Value |
 --- | ---
 IP | 0.0.0.0 
-MONGO_ URI | mongodb+srv://<username>:<password in mongo db>@<cluster_name>-qtxun.mongodb.net/<database name>?retryWrites=true&w=majority
+MONGO_ URI | <string at section 10 in instructions ^>
 PORT | 5000
 
-_Close space in MONGO URI ^_
 
 then click add after each one to insert.
 
