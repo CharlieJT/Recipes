@@ -583,7 +583,7 @@ this should be done in the terminal.
 - #### Images
     - The Main background image for the website was found [here](https://www.pinterest.nz/pin/346566133817029961/)
     - The Recipe Nest logo was created [here](https://www.brandcrowd.com/maker/tag/name)
-    - The Favicon was created [here](ttps://favicon.io/favicon-converter/)
+    - The Favicon was created [here](https://favicon.io/favicon-converter/)
 
 ### Help with code
 
