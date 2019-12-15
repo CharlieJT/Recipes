@@ -32,7 +32,11 @@ recipe platform!
     - [**Existing Features**](#existing-features)
     - [**Features Left to Implement**](#features-left-to-implement)
 
-3. [**Technologies Used**](#technologies-used)
+3. [**Database**](#database)
+    - [**Data types**](#data-types)
+    - [**Recipes Database**](#recipes-database)
+
+4. [**Technologies Used**](#technologies-used)
 
 ## UX
 
@@ -394,11 +398,11 @@ for this particular project & to gain experience using a NoSQL database.
 ### Recipes Database
 
 - A database was created called 'myRecipes' which contains a collection called recipes which is where
-- each piece of data for each recipe is stored. The data structure are as follows:
+- each piece of data for each 'recipe' is stored. The data structure are as follows:
 
 | Name of field | field key | field value | type |
 --- | --- | --- | --- 
-Recipe ID | _id | `<Creates ID automatically>`  | ObjectId 
+Recipe ID | _id | `<Creates ID automatically>` | ObjectId 
 Recipe Name | recipe_name | `<Name of your Recipe>` | string
 Recipe Description | recipe_description | `<Describe your recipe in a paragraph>` | string
 Recipe Ingredients | recipe_ingredients | `<Each ingredient in recipe>` | string
