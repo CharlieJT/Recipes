@@ -16,6 +16,9 @@ Recipe Nest - Testing
 
 2. [**User Stories Testing**](#user-stories-testing)
 
+3. [**Manual Testing**](#manual-testing)
+    - [**Testing on Desktop**](#testing-on-desktop)
+    - [**Testing on tablet and mobile devices**](#testing-on-tablet-and-mobile-devices)
 
 <br>
 
@@ -68,3 +71,78 @@ This follows on from each of the **'User Stories'** items from the **'UX'** sect
         - Any user can edit any of the recipes.
         - Any user can create a recipe.
         - Any user can delete any of the recipes.
+
+## Manual Testing
+
+A number of manual tests were done to ensure the website was working with it's intended purpose and use.
+
+### Testing on Desktop
+
+The website was tested numerous times in Browsers: Chrome, Safari, FireFox and Internet Explorer
+on a Laptop, Macbook & Desktop PC.
+
+#### 1. Dashboard
+
+I checked that:
+
+- The main image is loading properly, is 100 view height & there are no issues with the height or width.
+- There is an animation on the search bar when the page is loaded for the first time, it should blur into vision.
+- The animation for the downwards chevron is working & that it's clickable.
+- There is no upwards chevron in the bottom right-hand corner until the page has been scrolled down.
+- My Github repo in the footer links correctly to my github repo for the project & that it opens up in a new tab.
+- The Favicon is loading correctly.
+- The upwards chevron is appearing when scrolled down the page & that it's animating correctly when hovered over
+& when it's clicked.
+- The navbar is correctly animating so the main logo is decreasing in size & that is has a darkened background
+when scrolled down.
+- The footer was properly sitting at the bottom of the page as I added a sticky footer to the bottom.
+
+#### 2. Home Page
+
+I checked that:
+
+- All images were loaded properly.
+- It was showing the top 3 most viewed recipes on the home page, I confirmed this in MongoDB.
+- All information on each card was loading correctly.
+- The search bar was correctly animating when the input field is active & that it's changing colour.
+- The link 'Home' is slightly lighter in colour than the rest of the links in the footer.
+- That the link for the search bar is working correctly by testing numerous inputs.
+- Each card on the home page links correctly to the recipe page when clicking the image, the title &
+the button, also that is linking to the correct recipe.
+- Each of the ellipses on each of the card will show the description of the recipe when clicked.
+- On all displays from 992 pixels & upwards that everything is sitting correctly on the page &
+that nothing is out of place.
+- All images dimensions are accounted for.
+
+#### 3. Recipe Listing
+
+I checked that:
+
+- All images were loaded properly.
+- It was showing all of the available recipes, I confirmed this in MongoDB.
+- All information on each card was loading correctly.
+- The search bar was correctly animating when the input field is active & that it's changing colour.
+- The link 'List Of Recipes' is slightly lighter in colour than the rest of the links in the footer.
+- Each card on the home page links correctly to the recipe page when clicking the image, the title &
+the button, also that is linking to the correct recipe.
+- That the link for the search bar is working correctly by testing numerous inputs.
+- Each of the ellipses on each of the card will show the description of the recipe when clicked.
+- Checked on all displays from 992 pixels & upwards that everything is sitting correctly on the page &
+that nothing is out of place.
+- The breadcrumb was sitting correctly with the correct links & linking to their respective page.
+- Ensure that all images dimensions are accounted for.
+
+#### 4. Recipe
+
+I checked that:
+
+- All images were loaded properly on all recipes.
+- It was showing the correct recipe along with all of the information coming through.
+- Each of the steps of the ingredients which were separated with a full stop & coming through as a list.
+- Each of the steps of the instructions which were separated with a full stop & coming as steps.
+- When the page is reloaded, the view count incremented by 1.
+- The breadcrumb was sitting correctly with the correct links & linking to their respective page.
+- Checked on all displays from 992 pixels & upwards that everything is sitting correctly on the page &
+that nothing is out of place.
+- Edit button was correctly linking to the edit page & the delete button was displaying a modal with buttons
+that were linking to their appropriate action.
