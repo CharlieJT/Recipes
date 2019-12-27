@@ -105,7 +105,8 @@ I checked that:
 - It was showing the top 3 most viewed recipes on the home page, I confirmed this in MongoDB.
 - All information on each card was loading correctly.
 - The search bar was correctly animating when the input field is active & that it's changing colour.
-- The link 'Home' is slightly lighter in colour than the rest of the links in the footer.
+- The link 'Home' is slightly lighter in colour than the rest of the links in the footer and that
+the 'Home' item in Navbar is underlined.
 - That the link for the search bar is working correctly by testing numerous inputs.
 - Each card on the home page links correctly to the recipe page when clicking the image, the title &
 the button, also that is linking to the correct recipe.
@@ -122,7 +123,8 @@ I checked that:
 - It was showing all of the available recipes, I confirmed this in MongoDB.
 - All information on each card was loading correctly.
 - The search bar was correctly animating when the input field is active & that it's changing colour.
-- The link 'List Of Recipes' is slightly lighter in colour than the rest of the links in the footer.
+- The link 'List Of Recipes' is slightly lighter in colour than the rest of the links in the footer and that
+the 'List Of Recipes' item in Navbar is underlined.
 - Each card on the home page links correctly to the recipe page when clicking the image, the title &
 the button, also that is linking to the correct recipe.
 - That the link for the search bar is working correctly by testing numerous inputs.
@@ -165,7 +167,8 @@ with the new recipe being implemented.
 - A recipe can still be created if an 'optional' field is not filled out.
 - The recipe had been successfully created by viewing the recipe on the recipe page & checked
 to ensure it is visible in MongoDB with the viewing count set to '1'.
-- The link 'Create Recipe' is slightly lighter in colour than the rest of the links in the footer.
+- The link 'Create Recipe' is slightly lighter in colour than the rest of the links in the footer and that
+the 'Create Recipe' item in Navbar is underlined.
 
 
 #### 6. Edit Recipe
@@ -212,3 +215,147 @@ been set up in app.py, the error 404 function will fire off & will display the 4
 - A title, image of an empty plate & a brief description of what has happened is displayed along
 with a button to the 'Home Page'.
 - The button to the Home Page is correctly firing off & will link you back to the home page.
+
+
+### Testing on tablet and mobile devices
+
+The website was tested on iPhone 6, iPhone 8 Plus through Chrome and Safari. It's also been run through Chrome Developer tools
+in the 'Responsive' setting changing the width and height and changed to each device setting.
+
+#### 1. Dashboard
+
+I checked that:
+
+- The main image is loading properly, is 100 view height & there are no issues with the height or width.
+- There is an animation on the search bar when the page is loaded for the first time, it should blur into vision.
+- The animation for the downwards chevron is working & that it's clickable.
+- There is no upwards chevron in the bottom right-hand corner until the page has been scrolled down.
+- My Github repo in the footer links correctly to my github repo for the project & that it opens up in a new tab.
+- The Favicon is loading correctly.
+- The upwards chevron is appearing when scrolled down the page & that it's animating correctly when clicked on.
+- The navbar is correctly animating so the main logo is decreasing in size & that is has a darkened background
+when scrolled down.
+- The footer was properly sitting at the bottom of the page as I added a sticky footer to the bottom.
+- The side drawer is opening & closing properly when the burger icon is click & each side drawer item is linking correctly.
+
+
+#### 2. Home Page
+
+I checked that:
+
+- All images were loaded properly.
+- It was showing the top 3 most viewed recipes on the home page, I confirmed this in MongoDB.
+- All information on each card was loading correctly.
+- The search bar was correctly animating when the input field is active & that it's changing colour.
+- The link 'Home' is slightly lighter in colour than the rest of the links in the footer and that
+the 'Home' item in the side draw background is slightly grey.
+- That the link for the search bar is working correctly by testing numerous inputs.
+- Each card on the home page links correctly to the recipe page when clicking the image, the title &
+the button, also that is linking to the correct recipe.
+- Each of the ellipses on each of the card will show the description of the recipe when clicked.
+- On all displays from 992 pixels & upwards that everything is sitting correctly on the page &
+that nothing is out of place.
+- All images dimensions are accounted for.
+
+#### 3. Recipe Listing
+
+I checked that:
+
+- All images were loaded properly.
+- It was showing all of the available recipes, I confirmed this in MongoDB.
+- All information on each card was loading correctly.
+- The search bar was correctly animating when the input field is active & that it's changing colour.
+- The link 'List Of Recipes' is slightly lighter in colour than the rest of the links in the footer and that
+the 'List Of Recipes' item in the side draw background is slightly grey.
+- Each card on the home page links correctly to the recipe page when clicking the image, the title &
+the button, also that is linking to the correct recipe.
+- That the link for the search bar is working correctly by testing numerous inputs.
+- Each of the ellipses on each of the card will show the description of the recipe when clicked.
+- Checked on all displays from 992 pixels & upwards that everything is sitting correctly on the page &
+that nothing is out of place.
+- The breadcrumb was sitting correctly with the correct links & linking to their respective page.
+- Ensure that all images dimensions are accounted for.
+
+#### 4. Recipe
+
+I checked that:
+
+- All images were loaded properly on all recipes.
+- It was showing the correct recipe along with all of the information coming through.
+- Each of the steps of the ingredients which were separated with a full stop & coming through as a list.
+- Each of the steps of the instructions which were separated with a full stop & coming as steps.
+- When the page is reloaded, the view count incremented by 1.
+- The breadcrumb was sitting correctly with the correct links & linking to their respective page.
+- Checked on all displays from 992 pixels & upwards that everything is sitting correctly on the page &
+that nothing is out of place.
+- Edit button was correctly linking to the edit page & the delete button was displaying a modal with buttons
+that were linking to their appropriate action.
+
+#### 5. Create Recipe
+
+I checked that:
+
+- The form is sitting correctly on the page.
+- Each required input field in the form has a red asterisk next to it.
+- Each input field has a placeholder with the appropriate name & action if necessary.
+- The breadcrumb was sitting correctly with the correct links & linking to their respective page.
+- Each input field was correctly animating when the input field is active & that it's changing colour.
+- Validation is implemented correctly and if the 'Create Recipe' button is clicked
+with a required field being empty, it will flag up with red text underneath all of the fields
+that need to be filled.
+- When all of the required fields are filled in, & the 'Create Recipe' button is clicked,
+it will fire off the 'insert_recipe' function in app.py & redirect to the recipe listing page
+with the new recipe being implemented.
+- A recipe can still be created if an 'optional' field is not filled out.
+- The recipe had been successfully created by viewing the recipe on the recipe page & checked
+to ensure it is visible in MongoDB with the viewing count set to '1'.
+- The link 'Create Recipe' is slightly lighter in colour than the rest of the links in the footer and that
+the 'Create Recipe' item in the side draw background is slightly grey.
+
+
+#### 6. Edit Recipe
+
+I checked that:
+
+- The form is sitting correctly on the page.
+- Each required input field in the form has a red asterisk next to it.
+- Each input field has been auto-filled with the correct information stored in MongoDB.
+- The breadcrumb was sitting correctly with the correct links & linking to their respective page.
+- Each input field was correctly animating when the input field is active & that it's changing colour.
+- Validation is implemented correctly and if the 'Update Recipe' button is clicked
+with a required field being empty, it will flag up with red text underneath all of the fields
+that need to be filled.
+- When all of the required fields are filled in, & the 'Update Recipe' button is clicked,
+it will fire off the 'update_recipe' function in app.py & redirect to the recipe listing page
+with the recipe being updated with the correct information.
+- A recipe can still be editted if an 'optional' field is not filled out.
+- The recipe had been successfully updated by viewing the recipe on the recipe page & checked
+to ensure it is visible in MongoDB with the viewing count set to '1'.
+
+
+#### 7. Search Recipe
+
+I checked that:
+
+- When anytime are the search function is triggered by making a search, you will be linked to the search page.
+- The input of any of the search bar will do a find through the recipe name, recipe description,
+recipe instructions & any recipe keywords that are found in the database.
+- If no matches are found in the database, it will display 'No results have been found' with 
+a sad face image.
+- The search bar still works inside of the search page.
+- Both enter & the button works when doing a search.
+- The breadcrumb was sitting correctly with the correct links & linking to their respective page.
+- It was displaying the amount of recipes that had been found as well as displaying the query
+that had been inputted into the search bar.
+
+#### 8. 404 Error
+
+I checked that:
+
+- When a url has been inserted wrong or doesn't match with any of the functions that has
+been set up in app.py, the error 404 function will fire off & will display the 404 error page.
+- A title, image of an empty plate & a brief description of what has happened is displayed along
+with a button to the 'Home Page'.
+- The button to the Home Page is correctly firing off & will link you back to the home page.
+
+
