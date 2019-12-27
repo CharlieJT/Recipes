@@ -356,7 +356,7 @@ main-recipe-images-column {
 .insert-recipe-ingredients-validation-flag,
 .insert-recipe-description-validation-flag,
 .insert-recipe-instructions-validation-flag,
-.insert-recipe-keywords-validation-flag
+.insert-recipe-keywords-validation-flag,
 .insert-recipe-image-url-validation-flag {
     display: block;
     color: red;

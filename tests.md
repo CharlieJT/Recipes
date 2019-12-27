@@ -146,3 +146,69 @@ I checked that:
 that nothing is out of place.
 - Edit button was correctly linking to the edit page & the delete button was displaying a modal with buttons
 that were linking to their appropriate action.
+
+#### 5. Create Recipe
+
+I checked that:
+
+- The form is sitting correctly on the page.
+- Each required input field in the form has a red asterisk next to it.
+- Each input field has a placeholder with the appropriate name & action if necessary.
+- The breadcrumb was sitting correctly with the correct links & linking to their respective page.
+- Each input field was correctly animating when the input field is active & that it's changing colour.
+- Validation is implemented correctly and if the 'Create Recipe' button is clicked
+with a required field being empty, it will flag up with red text underneath all of the fields
+that need to be filled.
+- When all of the required fields are filled in, & the 'Create Recipe' button is clicked,
+it will fire off the 'insert_recipe' function in app.py & redirect to the recipe listing page
+with the new recipe being implemented.
+- A recipe can still be created if an 'optional' field is not filled out.
+- The recipe had been successfully created by viewing the recipe on the recipe page & checked
+to ensure it is visible in MongoDB with the viewing count set to '1'.
+- The link 'Create Recipe' is slightly lighter in colour than the rest of the links in the footer.
+
+
+#### 6. Edit Recipe
+
+I checked that:
+
+- The form is sitting correctly on the page.
+- Each required input field in the form has a red asterisk next to it.
+- Each input field has been auto-filled with the correct information stored in MongoDB.
+- The breadcrumb was sitting correctly with the correct links & linking to their respective page.
+- Each input field was correctly animating when the input field is active & that it's changing colour.
+- Validation is implemented correctly and if the 'Update Recipe' button is clicked
+with a required field being empty, it will flag up with red text underneath all of the fields
+that need to be filled.
+- When all of the required fields are filled in, & the 'Update Recipe' button is clicked,
+it will fire off the 'update_recipe' function in app.py & redirect to the recipe listing page
+with the recipe being updated with the correct information.
+- A recipe can still be editted if an 'optional' field is not filled out.
+- The recipe had been successfully updated by viewing the recipe on the recipe page & checked
+to ensure it is visible in MongoDB with the viewing count set to '1'.
+
+
+#### 7. Search Recipe
+
+I checked that:
+
+- When anytime are the search function is triggered by making a search, you will be linked to the search page.
+- The input of any of the search bar will do a find through the recipe name, recipe description,
+recipe instructions & any recipe keywords that are found in the database.
+- If no matches are found in the database, it will display 'No results have been found' with 
+a sad face image.
+- The search bar still works inside of the search page.
+- Both enter & the button works when doing a search.
+- The breadcrumb was sitting correctly with the correct links & linking to their respective page.
+- It was displaying the amount of recipes that had been found as well as displaying the query
+that had been inputted into the search bar.
+
+#### 8. 404 Error
+
+I checked that:
+
+- When a url has been inserted wrong or doesn't match with any of the functions that has
+been set up in app.py, the error 404 function will fire off & will display the 404 error page.
+- A title, image of an empty plate & a brief description of what has happened is displayed along
+with a button to the 'Home Page'.
+- The button to the Home Page is correctly firing off & will link you back to the home page.
