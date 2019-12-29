@@ -42,10 +42,10 @@ I needed to remove jinja to ensure this first.
 
 Python testing was included in my project to test the business logic of recipe views and models.
 
-As this was the first time I was doing Python testing, I decided to do my testing after writing my code.
+As this was the first time, I was doing Python testing, I decided to do my testing after writing my code.
 As it wasn't possible to tests every single function in my app.py, I tested around 70% of my function.
 
-An inport called 'unittest' was used to carry out the testing.
+An import called 'unittest' was used to carry out the testing.
 
 The functions that were tested were as follows:
 
@@ -57,7 +57,7 @@ The functions that were tested were as follows:
  - Delete Recipe
  - 404 Error
 
-When all of the testing was complete, I got "All tests passed" printing in the terminal.
+When all the testing was complete, I got "All tests passed" printing in the terminal.
 
 ## User Stories Testing
 
@@ -74,24 +74,24 @@ This follows on from each of the **'User Stories'** items from the **'UX'** sect
         - You will find a navigation on every page of website.
         - The Recipe Logo will navigate you back to the home page.
         - Breadcrumbs have been added to all pages which are necessary to jump back to specific pages with
-        the name of the page that is linked this helps alot with the website navigation.
-        - If you hit the 404 error page at any point. There is a button which allows you to go back to the home page.
-    - ### Buttons which are simple but informative & give a good indication of their purpose.
+        the name of the page that is linked this helps a lot with the website navigation.
+        - If you hit the 404-error page at any point. There is a button which allows you to go back to the home page.
+    - ### Buttons which are simple but informative & give a good indication of their primary purpose.
         - Button have been labelled correctly with their accordance.
         - They have been given the appropriate colour for either purpose.
     - ### Subtle animations to not overcomplicate the website, but to give a strong professional look & feel.
         - Buttons & images throughout the website have a nice waves effect when clicked.
         - Input fields are been given a nice animation when the field is active. The placeholder will jump to the top
-        & the underline & placeholder will trasnform to blue.
+        & the underline & placeholder will transform to blue.
         - A back to top chevron has a nice animation when you hover over it, it will transform to blue from white &
         rotate.
         - A downwards chevron has been animated to give an indication that there is more information below.
     - ### Good separation between each instruction.
         - When inputting the information for each instruction, It instructs you to input each piece of instructions,
-        seperated by a full stop. When it reaches the front-end. It will list each item in a 'step' for each
+        separated by a full stop. When it reaches the front-end. It will list each item in a 'step' for each
         instruction.
     - ### I have full control over all recipes on the website.
-        - You are able to view all of the recipes on the website.
+        - You can view all the recipes on the website.
         - You can search for any recipe on the website.
         - Any user can edit any of the recipes.
         - Any user can create a recipe.
@@ -99,7 +99,7 @@ This follows on from each of the **'User Stories'** items from the **'UX'** sect
 
 ## Manual Testing
 
-A number of manual tests were done to ensure the website was working with it's intended purpose and use.
+A number of manual tests were done to ensure the website was working with its intended purpose and use.
 
 ### Testing on Desktop
 
@@ -114,7 +114,7 @@ I checked that:
 - There is an animation on the search bar when the page is loaded for the first time, it should blur into vision.
 - The animation for the downwards chevron is working & that it's clickable.
 - There is no upwards chevron in the bottom right-hand corner until the page has been scrolled down.
-- My Github repo in the footer links correctly to my github repo for the project & that it opens up in a new tab.
+- My GitHub repo in the footer links correctly to my GitHub repo for the project & that it opens in a new tab.
 - The Favicon is loading correctly.
 - The upwards chevron is appearing when scrolled down the page & that it's animating correctly when hovered over
 & when it's clicked.
@@ -145,7 +145,7 @@ that nothing is out of place.
 I checked that:
 
 - All images were loaded properly.
-- It was showing all of the available recipes, I confirmed this in MongoDB.
+- It was showing all the available recipes, I confirmed this in MongoDB.
 - All information on each card was loading correctly.
 - The search bar was correctly animating when the input field is active & that it's changing colour.
 - The link 'List Of Recipes' is slightly lighter in colour than the rest of the links in the footer and that
@@ -164,7 +164,7 @@ that nothing is out of place.
 I checked that:
 
 - All images were loaded properly on all recipes.
-- It was showing the correct recipe along with all of the information coming through.
+- It was showing the correct recipe along with all the information coming through.
 - Each of the steps of the ingredients which were separated with a full stop & coming through as a list.
 - Each of the steps of the instructions which were separated with a full stop & coming as steps.
 - When the page is reloaded, the view count incremented by 1.
@@ -186,7 +186,7 @@ I checked that:
 - Validation is implemented correctly and if the 'Create Recipe' button is clicked
 with a required field being empty, it will flag up with red text underneath all of the fields
 that need to be filled.
-- When all of the required fields are filled in, & the 'Create Recipe' button is clicked,
+- When all the required fields are filled in, & the 'Create Recipe' button is clicked,
 it will fire off the 'insert_recipe' function in app.py & redirect to the recipe listing page
 with the new recipe being implemented.
 - A recipe can still be created if an 'optional' field is not filled out.
@@ -202,16 +202,16 @@ I checked that:
 
 - The form is sitting correctly on the page.
 - Each required input field in the form has a red asterisk next to it.
-- Each input field has been auto-filled with the correct information stored in MongoDB.
+- Each input field has been auto filled with the correct information stored in MongoDB.
 - The breadcrumb was sitting correctly with the correct links & linking to their respective page.
 - Each input field was correctly animating when the input field is active & that it's changing colour.
 - Validation is implemented correctly and if the 'Update Recipe' button is clicked
-with a required field being empty, it will flag up with red text underneath all of the fields
+with a required field being empty, it will flag up with red text underneath all the fields
 that need to be filled.
-- When all of the required fields are filled in, & the 'Update Recipe' button is clicked,
+- When all the required fields are filled in, & the 'Update Recipe' button is clicked,
 it will fire off the 'update_recipe' function in app.py & redirect to the recipe listing page
 with the recipe being updated with the correct information.
-- A recipe can still be editted if an 'optional' field is not filled out.
+- A recipe can still be edited if an 'optional' field is not filled out.
 - The recipe had been successfully updated by viewing the recipe on the recipe page & checked
 to ensure it is visible in MongoDB with the viewing count set to '1'.
 
@@ -220,7 +220,7 @@ to ensure it is visible in MongoDB with the viewing count set to '1'.
 
 I checked that:
 
-- When anytime are the search function is triggered by making a search, you will be linked to the search page.
+- Anytime the search function is triggered by making a search, you will be linked to the search page.
 - The input of any of the search bar will do a find through the recipe name, recipe description,
 recipe instructions & any recipe keywords that are found in the database.
 - If no matches are found in the database, it will display 'No results have been found' with 
@@ -228,15 +228,15 @@ a sad face image.
 - The search bar still works inside of the search page.
 - Both enter & the button works when doing a search.
 - The breadcrumb was sitting correctly with the correct links & linking to their respective page.
-- It was displaying the amount of recipes that had been found as well as displaying the query
+- It was displaying the number of recipes that had been found as well as displaying the query
 that had been inputted into the search bar.
 
 #### 8. 404 Error
 
 I checked that:
 
-- When a url has been inserted wrong or doesn't match with any of the functions that has
-been set up in app.py, the error 404 function will fire off & will display the 404 error page.
+- When a URL has been inserted wrong or doesn't match with any of the functions that has
+been set up in app.py, the error 404 function will fire off & will display the 404-error page.
 - A title, image of an empty plate & a brief description of what has happened is displayed along
 with a button to the 'Home Page'.
 - The button to the Home Page is correctly firing off & will link you back to the home page.
@@ -255,7 +255,7 @@ I checked that:
 - There is an animation on the search bar when the page is loaded for the first time, it should blur into vision.
 - The animation for the downwards chevron is working & that it's clickable.
 - There is no upwards chevron in the bottom right-hand corner until the page has been scrolled down.
-- My Github repo in the footer links correctly to my github repo for the project & that it opens up in a new tab.
+- My GitHub repo in the footer links correctly to my GitHub repo for the project & that it opens in a new tab.
 - The Favicon is loading correctly.
 - The upwards chevron is appearing when scrolled down the page & that it's animating correctly when clicked on.
 - The navbar is correctly animating so the main logo is decreasing in size & that is has a darkened background
@@ -287,7 +287,7 @@ that nothing is out of place.
 I checked that:
 
 - All images were loaded properly.
-- It was showing all of the available recipes, I confirmed this in MongoDB.
+- It was showing all the available recipes, I confirmed this in MongoDB.
 - All information on each card was loading correctly.
 - The search bar was correctly animating when the input field is active & that it's changing colour.
 - The link 'List Of Recipes' is slightly lighter in colour than the rest of the links in the footer and that
@@ -306,7 +306,7 @@ that nothing is out of place.
 I checked that:
 
 - All images were loaded properly on all recipes.
-- It was showing the correct recipe along with all of the information coming through.
+- It was showing the correct recipe along with all the information coming through.
 - Each of the steps of the ingredients which were separated with a full stop & coming through as a list.
 - Each of the steps of the instructions which were separated with a full stop & coming as steps.
 - When the page is reloaded, the view count incremented by 1.
@@ -328,7 +328,7 @@ I checked that:
 - Validation is implemented correctly and if the 'Create Recipe' button is clicked
 with a required field being empty, it will flag up with red text underneath all of the fields
 that need to be filled.
-- When all of the required fields are filled in, & the 'Create Recipe' button is clicked,
+- When all the required fields are filled in, & the 'Create Recipe' button is clicked,
 it will fire off the 'insert_recipe' function in app.py & redirect to the recipe listing page
 with the new recipe being implemented.
 - A recipe can still be created if an 'optional' field is not filled out.
@@ -344,16 +344,16 @@ I checked that:
 
 - The form is sitting correctly on the page.
 - Each required input field in the form has a red asterisk next to it.
-- Each input field has been auto-filled with the correct information stored in MongoDB.
+- Each input field has been auto filled with the correct information stored in MongoDB.
 - The breadcrumb was sitting correctly with the correct links & linking to their respective page.
 - Each input field was correctly animating when the input field is active & that it's changing colour.
 - Validation is implemented correctly and if the 'Update Recipe' button is clicked
-with a required field being empty, it will flag up with red text underneath all of the fields
+with a required field being empty, it will flag up with red text underneath all the fields
 that need to be filled.
-- When all of the required fields are filled in, & the 'Update Recipe' button is clicked,
+- When all the required fields are filled in, & the 'Update Recipe' button is clicked,
 it will fire off the 'update_recipe' function in app.py & redirect to the recipe listing page
 with the recipe being updated with the correct information.
-- A recipe can still be editted if an 'optional' field is not filled out.
+- A recipe can still be edited if an 'optional' field is not filled out.
 - The recipe had been successfully updated by viewing the recipe on the recipe page & checked
 to ensure it is visible in MongoDB with the viewing count set to '1'.
 
@@ -370,15 +370,15 @@ a sad face image.
 - The search bar still works inside of the search page.
 - Both enter & the button works when doing a search.
 - The breadcrumb was sitting correctly with the correct links & linking to their respective page.
-- It was displaying the amount of recipes that had been found as well as displaying the query
+- It was displaying the number of recipes that had been found as well as displaying the query
 that had been inputted into the search bar.
 
 #### 8. 404 Error
 
 I checked that:
 
-- When a url has been inserted wrong or doesn't match with any of the functions that has
-been set up in app.py, the error 404 function will fire off & will display the 404 error page.
+- When a URL has been inserted wrong or doesn't match with any of the functions that has
+been set up in app.py, the error 404 function will fire off & will display the 404-error page.
 - A title, image of an empty plate & a brief description of what has happened is displayed along
 with a button to the 'Home Page'.
 - The button to the Home Page is correctly firing off & will link you back to the home page.
@@ -390,8 +390,8 @@ with a button to the 'Home Page'.
 
 1. #### Issues with image sizes on the recipe cards.
 
-    There was an issue with the images in the cards when they were different dimensions, their default behavior
-    is to stretch & shrink the card which can leave the cards looking messy if all of the images were scaled differently.
+    There was an issue with the images in the cards when they were different dimensions, their default behaviour
+    is to stretch & shrink the card which can leave the cards looking messy if all the images were scaled differently.
     
     **How it was fixed**:
 
@@ -425,24 +425,24 @@ with a button to the 'Home Page'.
     When in safari, smooth scrolling does not work when clicking on the upwards chevron & the
     downwards chevron.
     
-    Unfortunately, I could not figure a way around this issue. I tried searching the internet but
+    Unfortunately, I could not figure a way around this issue. I tried searching the internet, but
     I couldn't find the answer.
     
 2. #### Glitchy upwards chevron.
 
     At times, the upwards chevron can become glitchy & will animate on click instead of hover.
     
-    I did try to look for the answer to this but I didn't see this as a major issue as the
+    I did try to look for the answer to this, but I didn't see this as a major issue as the
     chevron was still working as it should.
     
 3. #### Home not being underlined on load in the Navbar.
 
-    When the home page is loaded for the first time, the url is '/' instead of '/index'.
+    When the home page is loaded for the first time, the URL is '/' instead of '/index'.
     When the index function is run (function for the home page), it will pick up the route
     as being '/index' therefore '/' is not the active class so it won't be underlined.
     
     I could not figure a way around this & my mentor said not to worry too much as it's
-    pretty obvious that you're on the home page at that point anyway.
+    obvious that you're on the home page at that point anyway.
     
 ## Further Testing
 
