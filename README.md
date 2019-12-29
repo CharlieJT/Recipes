@@ -40,7 +40,7 @@ recipe platform!
 
 5. [**Testing**](#testing)
 
-6. [**Deployement**](#deployment)
+6. [**Deployment**](#deployment)
     - [**To run on your local IDE**](#to-run-on-your-local-ide)
     - [**Deploy to Heroku**](#deploy-to-heroku)
 
@@ -57,7 +57,7 @@ recipe platform!
 ### Project Purpose
 
 The goal of Recipe Nest is to give users full access & control over all recipes. This
-means they are able to create recipes, view all recipes, update any recipe & delete any recipe.
+means they can create recipes, view all recipes, update any recipe & delete any recipe.
 
 ### User Experience
 
@@ -74,11 +74,11 @@ there is more information below should the user be confused. The arrow is also c
 down the page when it's clicked.
 
 - All cards on the website have a clickable image, title & 'view recipe' button which will navigate the
-user to that particular recipe page. Should they want a quick look at the description of the recipe,
+user to that recipe page. Should they want a quick look at the description of the recipe,
 ellipses (3 vertical dots) have been put on each card as an indicator to view the description before
 they click to view the whole recipe.
 
-- Bread crumbs have been included at the top of specific pages to help easily navigate back to pages
+- Breadcrumbs have been included at the top of specific pages to help easily navigate back to pages
 they have previously come from.
 
 - When a user has mistakenly inputted a wrong path in the URL, a 404 page will show with a link back to the
@@ -86,17 +86,17 @@ home page.
 
 - Asterisks (Star symbols) have been included in each form fields to indicate which fields are required to be
 filled in before submission. If a user has submitted a form without filling in a required field, validation
-has been included & will prompt the user to input any particular input field that is required. Also, placeholders have been
+has been included & will prompt the user to input any input field that is required. Also, placeholders have been
 given to instruct the users on how the information they give should be sectioned out.
 
-- Edit recipe fields are filled out automatically so that the user does not need to input all of the previous values back in
+- Edit recipe fields are filled out automatically so that the user does not need to input all the previous values back in
 before they submit an update.
 
 - When the delete button is clicked on the recipe page, the user is presented with a modal to ensure they want to
 delete their recipe permanently.
 
-- The player does not need to click a back button or to reload the page. Easy and informative buttons have been provided
-at all times to ensure the user has an easy way around the website.
+- The player does not need to click a back button or to reload the page. Easy and informative buttons have always been provided
+to ensure the user has an easy way around the website.
 
 ### Design Ideas
 
@@ -122,14 +122,14 @@ The design of the website was to give a clean & intuitive look & feel ensuring t
     of the main image of the home page &  was also selected for the footer to contrast nicely with the blue background.
     
     - **Cards -** A white background for each card was kept as a nice indicator of a 'card' & a box-shadow was kept
-    to give a nice separation between the background of the outer card & the inner card. This was contrasted nicely with
+    giving a nice separation between the background of the outer card & the inner card. This was contrasted nicely with
     black text.
     
     - **To Top Arrow -** A white 'up' chevron was contrasted nicely with a darkened background & a white border
     & when hovered over, the white chevron & border transformed to blue, this was to give a nice live look & feel to
     the chevron.
     
-    - **Edit & Delete Buttons -** An blue colour for the edit button was chosen to conform with the buttons of the website
+    - **Edit & Delete Buttons -** A blue colour for the edit button was chosen to conform with the buttons of the website
     & the delete button was styled with red to indicate a 'danger' or (be aware) feel. This was contrasted nicely with white text.
     
     - **Forms -** A white background was chosen to conform to the website & a red asterisk was added to indicate that
@@ -152,7 +152,7 @@ The design of the website was to give a clean & intuitive look & feel ensuring t
     subtle animation when the user clicks on a field, the placeholder will bounce to the top of the field,
     change the bottom border & text to blue & allow the user to input text.
     
-    - **Buttons & images** With the help of materialize, when all buttons or images on cards are clicked,
+    - **Buttons & images** with the help of materialize, when all buttons or images on cards are clicked,
     a nice waves effect is triggered giving it a nice subtle animation.
     
     - **Down chevron** A downwards chevron was included underneath the homepage search bar to give an
@@ -170,7 +170,7 @@ The design of the website was to give a clean & intuitive look & feel ensuring t
     it doesn't take up too much space & so it can still be seen by the user.
     
     - **Active pages -** When either the Home, List of Recipes or Create Page is active, depending on whichever it is,
-    The navbar on desktop displays a white underline underneath the corrisponding page. On mobile, it colours the background
+    The navbar on desktop displays a white underline underneath the corresponding page. On mobile, it colours the background
     of the corresponding page to grey & in the footer, the corresponding text will be grey, which will only work if
     one of those pages is active.
     
@@ -253,16 +253,16 @@ Every feature must react to it's intended purpose.
     it will smooth scroll you down to the next section of the home page.
     
     - The navbar will also shrink when a user has scrolled down, this is to ensure that it doesn't take up too much space &
-    the background is darkened to ensure it can be seen at all times.
+    the background is darkened to ensure it can always be seen.
     
     - When you've scrolled down to the next section, you'll be presented with the top 3 viewed recipes on the website
-    which is dependant on how many times each particular recipe has been viewed on its specific recipe page.
+    which is dependant on how many times each recipe has been viewed on its specific recipe page.
     
-    - With each most viewed recipe cards, you can click the ellipses (3 vertical dots) to see that particular description &
+    - With each most viewed recipe cards, you can click the ellipses (3 vertical dots) to see that description &
     by clicking on the image, name or 'view recipe' button, it will navigate you to view the recipe.
     
     - The footer positioned at the bottom of the screen shows links to the Home, Recipe listing & Create recipe pages,
-    a brief description of the main purpose of the website, a link to the developers github repository & copyright text at the bottom.
+    a brief description of the main purpose of the website, a link to the developers GitHub repository & copyright text at the bottom.
     
     
 2. #### Recipe Listing Page
@@ -274,7 +274,7 @@ Every feature must react to it's intended purpose.
     
     - When you arrive at the recipe listing page, you will be presented with a breadcrumb which will navigate you back to the
     homepage & will show you you're currently on the recipe listing page. You also have the option to search
-    for a particular recipe from there too. 
+    for a recipe from there too. 
     
     - You are also presented with all of the recipes that are on the website with the option to click the ellipses (3 vertical dots)
     to see that particular description & by clicking on the image, name or 'view recipe' button, it will navigate you to view the recipe.
@@ -293,7 +293,7 @@ Every feature must react to it's intended purpose.
     additional information, adjust information or delete information.
     
     - A delete button has also been included so that the user has the option to delete the recipe, a modal will be presented
-    upon clicking the modal to ensure that the user is notified with the outcome of deleting a recipe before they permanantly
+    upon clicking the modal to ensure that the user is notified with the outcome of deleting a recipe before they permanently
     delete it.
     
     - List items of ingredients are shown of each ingredient.
@@ -324,7 +324,7 @@ Every feature must react to it's intended purpose.
     
     - Each field except for the 'Recipe Keywords' field is a required field and has a red asterisk next to each of them
     to indicate that you 'must' fill that field. If not done & the user clicks submit, the user will be prompted to input
-    all of the required fields with red text under each of them.
+    all the required fields with red text under each of them.
     
 5. #### Edit Recipe Page
 
@@ -348,7 +348,7 @@ Every feature must react to it's intended purpose.
     
     - Each field except for the 'Recipe Keywords' field is a required field and has a red asterisk next to each of them
     to indicate that you 'must' fill that field. If not done & the user clicks submit, the user will be prompted to input
-    all of the required fields with red text under each of them.
+    all the required fields with red text under each of them.
 
 6. #### Search Recipe Page
 
@@ -377,7 +377,7 @@ Every feature must react to it's intended purpose.
     </div>
     <br>
     
-    - If at anytime the user has inputted a value in the URL that has not been found, a 404
+    - If at any time the user has inputted a value in the URL that has not been found, a 404
     page will be presented.
     
     - The page will show the user a message explaining that they've gotten lost & will have a button
@@ -426,12 +426,12 @@ Amount of views | views | `<Amount of viewings of recipe>` | int32
 
 #### Views
 
-- A view will begin at 1 when the recipe has been created & will then increment by 1 everytime that a
-partilcar recipe is used on the website with the corresponding ID.
+- A view will begin at 1 when the recipe has been created & will then increment by 1 every time that a
+recipe is used on the website with the corresponding ID.
 
 ## Technologies Used
 
-- This project uses HTML, CSS, JavaScript, Python, Flask, MongoDB and various different technologies to work as helpers to the languages.
+- This project uses HTML, CSS, JavaScript, Python, Flask, MongoDB and various technologies to work as helpers to the languages.
 - #### [Cloud9](https://c9.io)
     - **Cloud9** is an IDE used to develop the website.
 - #### [MongoDB](https://www.mongodb.com/)
@@ -444,10 +444,10 @@ partilcar recipe is used on the website with the corresponding ID.
 - #### [JQuery](https://jquery.com)
     - **JQuery** has been used to simplify DOM manipulation.
 - #### [GitHub](https://github.com/)
-    - **Github** is used: 
+    - **GitHub** is used: 
     1. As a remote backup of code used in the project.
 - #### [AutoPrefixer](https://autoprefixer.github.io/)
-    - **AutoPrefixer** is used to ensure all css prefixes are running with the most up to date versions.
+    - **AutoPrefixer** is used to ensure all CSS prefixes are running with the most up to date versions.
 - #### [Heroku](https://www.heroku.com)
     - **Heroku** is used as a platform for the project to be deployed to.
     - For users to view the deployed version of the website. The deployed version can be viewed [here!](https://listing-of-recipes.herokuapp.com).
@@ -537,12 +537,12 @@ python3 app.py
 2. You need to add a requirements.txt file by using the command `sudo pip3 freeze —local > requirements.txt`
 which will add all of the package that you need to use for the project.
 
-3. Use `git add .` to stage all of your files `git commit -m "<message here>"` to commit the changes ready to push to github
+3. Use `git add .` to stage all of your files `git commit -m "<message here>"` to commit the changes ready to push to GitHub.
 
-4. You must then create a repository in github & follow the instructions in order to push your work up to github.
+4. You must then create a repository in GitHub & follow the instructions in order to push your work up to GitHub.
 
-5. Using `git push` & inputting your email & password when instructed, this will push all of the files
-that have been committed up to github.
+5. Using `git push` & inputting your email & password when instructed, this will push all of the files.
+that have been committed up to GitHub.
 _Note that the password field will not change when you are inserting text_
 
 6. Go to heroku [here](https://dashboard.heroku.com/) & ensure you are signed up.
@@ -551,7 +551,7 @@ _Note that the password field will not change when you are inserting text_
 
 8. Give any name you like & set the region to "Europe".
 
-9. Ensure you link the heroku application to the correct Github repository.
+9. Ensure you link the Heroku application to the correct GitHub repository.
 
 10. Click inside of your app that you've just created and go to "Settings" then to "Reveal Config Vars".
 They should all read as follows:
@@ -565,10 +565,10 @@ PORT | 5000
 
 then click add after each one to insert.
 
-10. Go back to the top & go to "Deploy" and scroll down to the list of instructions given to deploy your project to heroku,
+11. Go back to the top & go to "Deploy" and scroll down to the list of instructions given to deploy your project to Heroku,
 this should be done in the terminal.
 
-11. After these step are done correctly, you can scroll to the very top of the page in Heroku & click
+12. After these steps are done correctly, you can scroll to the very top of the page in Heroku & click
 "Open App". You will now be able to view the project in Heroku.
 
 ## Credits
@@ -599,13 +599,13 @@ The code learned from the snippet was not copied into the project, they were use
 
 A huge thank you to:
 
-- Spencer Barriball (spence_mentor) - For helping me with planning & preperation as well as providing me with
+- Spencer Barriball (spence_mentor) - For helping me with planning & preparation as well as providing me with
 useful tips & tricks to use in my project, also helping me with issues along the way.
 
-- Martin (Code Institute) - For hepling me with a requirement.txt file that wasn't allowing me to deploy my project properly
+- Martin (Code Institute) - For helping me with a requirement.txt file that wasn't allowing me to deploy my project properly
 to Heroku.
 
-- Tim (Code Institute) - For a minor fix with an image file path which would not allow me to view my images with jinja in heroku. 
+- Tim (Code Institute) - For a minor fix with an image file path which would not allow me to view my images with jinja in Heroku. 
 
 ## Disclaimer
 
