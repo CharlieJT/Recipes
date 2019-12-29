@@ -45,6 +45,8 @@ Python testing was included in my project to test the business logic of recipe v
 As this was the first time I was doing Python testing, I decided to do my testing after writing my code.
 As it wasn't possible to tests every single function in my app.py, I tested around 70% of my function.
 
+An inport called 'unittest' was used to carry out the testing.
+
 The functions that were tested were as follows:
 
  - Home Page
