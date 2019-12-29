@@ -19,7 +19,10 @@ Recipe Nest - Testing
 3. [**Manual Testing**](#manual-testing)
     - [**Testing on Desktop**](#testing-on-desktop)
     - [**Testing on tablet and mobile devices**](#testing-on-tablet-and-mobile-devices)
-
+4. [**Bugs Found**](#bugs-found)
+    - [**Bugs Solved**](#bugs-solved)
+    - [**Bugs Unsolved**](#bugs-unsolved)
+5. [**Further Testing**](#further-testing)
 <br>
 
 ## Automated Testing
@@ -359,3 +362,76 @@ with a button to the 'Home Page'.
 - The button to the Home Page is correctly firing off & will link you back to the home page.
 
 
+## Bugs Found
+
+### Bugs Solved
+
+1. #### Issues with image sizes on the recipe cards.
+
+    There was an issue with the images in the cards when they were different dimensions, their default behavior
+    is to stretch & shrink the card which can leave the cards looking messy if all of the images were scaled differently.
+    
+    **How it was fixed**:
+
+    - I set a max height & a max width to the card images & set the margin to auto. This would allow the image to
+    shrink to fit inside of the card. This would prevent stretching out the card & stretching the image.
+
+    ``` css
+    max-height: 264px;
+    max-height: 264px;
+    margin: auto;
+    }
+    ```
+
+1. #### Issues with image sizes on the recipe cards.
+
+    There was an issue with the images in the cards when they were different dimensions, their default behavior
+    is to stretch & shrink the card which can leave the cards looking messy if all of the images were scaled differently.
+    
+    **How it was fixed**:
+
+    - I set a max height & a max width to the card images & set the margin to auto. This would allow the image to
+    shrink to fit inside of the card. This would prevent stretching out the card & stretching the image.
+
+    ``` css
+    {
+    max-height: 264px;
+    max-height: 264px;
+    margin: auto;
+    }
+    ```
+    
+2. #### Images not being picked up in Heroku.
+
+    When working in my local IDE, images were working fine but when pushed up to Heroku, they were not being found
+    
+    **How it was fixed**:
+
+    - Removing the '/' before the file path seemed to sort my issue out.
+
+    ``` html
+    <img src="{{ url_for('static', filename='images/empty-plate.jpg') }}"></img>
+    ```
+    
+### Bugs Unsolved
+
+1. #### Smooth scrolling in Safari not working.
+
+    When in safari, smooth scrolling does not work when clicking on the upwards chevron & the
+    downwards chevron.
+    
+    Unfortunately, I could not figure a way around this issue. I tried searching the internet but
+    I couldn't find the answer.
+    
+2. #### Glitchy upwards chevron.
+
+    At times, the upwards chevron can become glitchy & will animate on click instead of hover.
+    
+    I did try to look for the answer to this but I didn't see this as a major issue as the
+    chevron was still working as it should.
+    
+## Further Testing
+
+- Friends, family and fellow students were asked to check the website on all devices they had, they tested functionality and layout,
+positive and constructive criticism was provided.
+- Tested in Chrome DevTools on all different devices and by scrolling up and down in the responsive setting.
