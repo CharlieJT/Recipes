@@ -13,6 +13,7 @@ Recipe Nest - Testing
 
 1. [**Automated Testing**](#automated-testing)
     - [**Validating Code**](#validating-code)
+    - [**Python Testing**](#python-testing)
 
 2. [**User Stories Testing**](#user-stories-testing)
 
@@ -36,6 +37,25 @@ I needed to remove jinja to ensure this first.
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to test CSS code to ensure it was valid code.
 - [Code Beautify JavaScript Validator](https://codebeautify.org/jsvalidate) was used to test JavaScript code to ensure it was valid code.
 
+
+### Python Testing
+
+Python testing was included in my project to test the business logic of recipe views and models.
+
+As this was the first time I was doing Python testing, I decided to do my testing after writing my code.
+As it wasn't possible to tests every single function in my app.py, I tested around 70% of my function.
+
+The functions that were tested were as follows:
+
+ - Home Page
+ - Recipe Listing
+ - Recipe
+ - Search Recipe
+ - Create Recipe
+ - Delete Recipe
+ - 404 Error
+
+When all of the testing was complete, I got "All tests passed" printing in the terminal.
 
 ## User Stories Testing
 
