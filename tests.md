@@ -399,23 +399,6 @@ with a button to the 'Home Page'.
     shrink to fit inside of the card. This would prevent stretching out the card & stretching the image.
 
     ``` css
-    max-height: 264px;
-    max-height: 264px;
-    margin: auto;
-    }
-    ```
-
-1. #### Issues with image sizes on the recipe cards.
-
-    There was an issue with the images in the cards when they were different dimensions, their default behavior
-    is to stretch & shrink the card which can leave the cards looking messy if all of the images were scaled differently.
-    
-    **How it was fixed**:
-
-    - I set a max height & a max width to the card images & set the margin to auto. This would allow the image to
-    shrink to fit inside of the card. This would prevent stretching out the card & stretching the image.
-
-    ``` css
     {
     max-height: 264px;
     max-height: 264px;
@@ -451,6 +434,15 @@ with a button to the 'Home Page'.
     
     I did try to look for the answer to this but I didn't see this as a major issue as the
     chevron was still working as it should.
+    
+3. #### Home not being underlined on load in the Navbar.
+
+    When the home page is loaded for the first time, the url is '/' instead of '/index'.
+    When the index function is run (function for the home page), it will pick up the route
+    as being '/index' therefore '/' is not the active class so it won't be underlined.
+    
+    I could not figure a way around this & my mentor said not to worry too much as it's
+    pretty obvious that you're on the home page at that point anyway.
     
 ## Further Testing
 
